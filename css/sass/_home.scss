@@ -1,0 +1,20 @@
+.bg_image_13 {
+	// background-image:url('../tn-imgs/Thirsty Nickel -6.jpg') !important;
+	background-image:none !important;
+	background-size:cover;
+	background-position:center;
+	background-color:#333;
+}
+
+.bg_image_12 {
+	background-image:none !important;
+}
+
+
+
+.tparrows {
+	color:white;
+	&:before {
+		color:white;
+	}
+}

@@ -289,7 +289,7 @@ website:   	http://www.themepunch.com
 	height: 0;
 	border-left: 40px solid transparent;
 	border-right: 0px solid transparent;
-	border-top: 40px solid #00A8FF;
+	border-top: 40px solid #bd8951;
 	position: absolute;left:-40px;top:0px;
 }
 
@@ -298,7 +298,7 @@ website:   	http://www.themepunch.com
 	height: 0;
 	border-left: 0px solid transparent;
 	border-right: 40px solid transparent;
-	border-bottom: 40px solid #00A8FF;
+	border-bottom: 40px solid #bd8951;
 	position: absolute;right:0px;top:0px;
 }
 
@@ -307,7 +307,7 @@ website:   	http://www.themepunch.com
 	height: 0;
 	border-left: 40px solid transparent;
 	border-right: 0px solid transparent;
-	border-bottom: 40px solid #00A8FF;
+	border-bottom: 40px solid #bd8951;
 	position: absolute;left:-40px;top:0px;
 }
 
@@ -316,7 +316,7 @@ website:   	http://www.themepunch.com
 	height: 0;
 	border-left: 0px solid transparent;
 	border-right: 40px solid transparent;
-	border-top: 40px solid #00A8FF;
+	border-top: 40px solid #bd8951;
 	position: absolute;right:0px;top:0px;
 }
 									
@@ -358,7 +358,7 @@ img.tp-slider-alternative-image	{
 .tp-caption.fullscreenvideo iframe video	{ width:100% !important; height:100% !important; display: none}
 
 .fullcoveredvideo video,
-.fullscreenvideo video				{	background: #000}
+.fullscreenvideo video				{	background: black}
 
 .fullcoveredvideo .tp-poster		{	background-position: center center;background-size: cover;width:100%;height:100%;top:0px;left:0px}
 
@@ -372,7 +372,7 @@ img.tp-slider-alternative-image	{
 	position: absolute;
 	top: 50%;
 	left: 50%;										
-	color: #FFF;
+	color: black;
 	z-index: 3;
 	margin-top: -25px;
 	margin-left: -25px;
@@ -395,7 +395,7 @@ img.tp-slider-alternative-image	{
 .tp-caption .html5vid					{	width:100% !important; height:100% !important;}									
 .tp-video-play-button i 				{	width:50px;height:50px; display:inline-block; text-align: center; vertical-align: top; line-height: 50px !important; font-size: 40px !important;}									
 .tp-caption:hover .tp-video-play-button	{	opacity: 1;}
-.tp-caption .tp-revstop					{	display:none; border-left:5px solid #fff !important; border-right:5px solid #fff !important;margin-top:15px !important;line-height: 20px !important;vertical-align: top; font-size:25px !important;}
+.tp-caption .tp-revstop					{	display:none; border-left:5px solid black !important; border-right:5px solid black !important;margin-top:15px !important;line-height: 20px !important;vertical-align: top; font-size:25px !important;}
 .videoisplaying .revicon-right-dir		{	display:none}
 .videoisplaying .tp-revstop				{	display:inline-block}
 
@@ -435,7 +435,7 @@ img.tp-slider-alternative-image	{
 .tp-video-button {
 	background: rgba(0,0,0,.5);
 	border: 0;
-	color: #EEE;
+	color: white;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-o-border-radius: 3px;
@@ -443,7 +443,7 @@ img.tp-slider-alternative-image	{
 	cursor:pointer;
 	line-height:12px;
 	font-size:12px;
-	color:#fff;
+	color:black;
 	padding:0px;
 	margin:0px;
 	outline: none;
@@ -481,7 +481,7 @@ img.tp-slider-alternative-image	{
 	-	SHADOWS		-
 ******************************/
 
-.tp-shadowcover	{	width:100%;height:100%;top:0px;left:0px;background: #fff;position: absolute; z-index: -1;}
+.tp-shadowcover	{	width:100%;height:100%;top:0px;left:0px;background: black;position: absolute; z-index: -1;}
 .tp-shadow1 {
 	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.8);
 	   -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.8);
@@ -556,12 +556,12 @@ img.tp-slider-alternative-image	{
 	-webkit-border-radius: 3px;
 	height:30px;
 	cursor:pointer;
-	color:#fff !important; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; font-size:15px; line-height:45px !important;
+	color:black !important; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; font-size:15px; line-height:45px !important;
 	font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
 	text-decoration:none;
 }
 
-.tp-button.big	{	color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; }
+.tp-button.big	{	color:black; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; }
 
 
 .purchase:hover,
@@ -644,7 +644,7 @@ img.tp-slider-alternative-image	{
   display: block;
   width: 30px;
   height: 3px;
-  background: #333;
+  background: black;
   transition: .7s;
   pointer-events: none;
   transform-style: flat !important;
@@ -677,37 +677,37 @@ img.tp-slider-alternative-image	{
   border: 2px solid rgba(255,255,255,0.2);
 }
 .rev-burger.revb-white span {
-  background: #fff;
+  background: black;
 }
 .rev-burger.revb-whitenoborder {
   border: 0;
 }
 .rev-burger.revb-whitenoborder span {
-  background: #fff;
+  background: black;
 }
 .rev-burger.revb-darknoborder {
   border: 0;
 }
 .rev-burger.revb-darknoborder span {
-  background: #333;
+  background: black;
 }
 
 .rev-burger.revb-whitefull {
-  background: #fff;
+  background: black;
   border:none;
 }
 
 .rev-burger.revb-whitefull span {
-	background:#333;
+	background:black;
 }
 
 .rev-burger.revb-darkfull {
-  background: #333;
+  background: black;
   border:none;
 }
 
 .rev-burger.revb-darkfull span {
-	background:#fff;
+	background:black;
 }
 
 
@@ -750,15 +750,15 @@ img.tp-slider-alternative-image	{
 	line-height: 18px;
 	font-size: 13px;
 	font-weight: normal;
-	color: #7f8c8d;
-	color: #ffffff;
+	color: #333;
+	color: black;
 	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: 2px;
 }
 .rev-scroll-btn > *:hover,
 .rev-scroll-btn > *:focus,
 .rev-scroll-btn > *.active {
-	color: #ffffff;
+	color: black;
 }
 .rev-scroll-btn > *:hover,
 .rev-scroll-btn > *:focus,
@@ -769,20 +769,20 @@ img.tp-slider-alternative-image	{
 }
 
 .rev-scroll-btn.revs-fullwhite  {
-	background:#fff;
+	background:black;
 }
 
 .rev-scroll-btn.revs-fullwhite span {
-	background: #333;	
+	background: black;	
 }
 
 .rev-scroll-btn.revs-fulldark  {
-	background:#333;
+	background:black;
 	border:none;
 }
 
 .rev-scroll-btn.revs-fulldark  span {
-	background: #fff;	
+	background: black;	
 }
 
 .rev-scroll-btn span {
@@ -801,17 +801,17 @@ img.tp-slider-alternative-image	{
 }
 
 .rev-scroll-btn.revs-dark {
-	border-color:#333;
+	border-color:black;
 }
 .rev-scroll-btn.revs-dark span {
-	background: #333;	
+	background: black;	
 }
 
 .rev-control-btn {
 	position: relative;
 	display: inline-block;
 	z-index: 5;	
-	color: #FFF;  
+	color: black;  
 	font-size: 20px;
 	line-height: 60px;
 	font-weight: 400;
@@ -834,12 +834,12 @@ img.tp-slider-alternative-image	{
 }
 
 .rev-cbutton-light	{	
-	color: #333;  	
+	color: black;  	
 	background-color: rgba(255,255,255, 0.75);	
 }
 
 .rev-cbutton-light-sr	{		
-	color: #333;  	
+	color: black;  	
 	border-radius: 3;		
 	background-color: rgba(255,255,255, 0.75);
 }
@@ -867,7 +867,7 @@ img.tp-slider-alternative-image	{
 /************************************
 -	TP BANNER TIMER		-
 *************************************/
-.tp-bannertimer								{	visibility: hidden; width:100%; height:5px; /*background:url(../assets/timer.png);*/ background: #fff; background: rgba(0,0,0,0.15); position:absolute; z-index:200; top:0px}
+.tp-bannertimer								{	visibility: hidden; width:100%; height:5px; /*background:url(../assets/timer.png);*/ background: black; background: rgba(0,0,0,0.15); position:absolute; z-index:200; top:0px}
 .tp-bannertimer.tp-bottom					{	top:auto; bottom:0px !important;height:5px}
 
 
@@ -976,7 +976,7 @@ img.tp-slider-alternative-image	{
 .tp-loader.spinner0 {
 	width: 40px;
 	height: 40px;
-	background-color: #fff;
+	background-color: black;
 	background:url(../assets/loader.gif) no-repeat center center;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
@@ -993,7 +993,7 @@ img.tp-slider-alternative-image	{
 .tp-loader.spinner1 {
 	width: 40px;
 	height: 40px;
-	background-color: #fff;
+	background-color: black;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 	margin-top:-20px;
@@ -1009,7 +1009,7 @@ img.tp-slider-alternative-image	{
 
 .tp-loader.spinner5 	{	
 	background:url(../assets/loader.gif) no-repeat 10px 10px;
-	background-color:#fff;
+	background-color:black;
 	margin:-22px -22px;
 	width:44px;height:44px;
 	border-radius: 3px;
@@ -1065,7 +1065,7 @@ img.tp-slider-alternative-image	{
 .tp-loader.spinner3 .bounce3 {
   width: 18px;
   height: 18px;
-  background-color: #fff;
+  background-color: black;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
   border-radius: 100%;
@@ -1116,7 +1116,7 @@ img.tp-slider-alternative-image	{
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: #fff;
+  background-color: black;
   border-radius: 100%;
   -webkit-animation: tp-bounce 2.0s infinite ease-in-out;
   animation: tp-bounce 2.0s infinite ease-in-out;
@@ -1178,16 +1178,16 @@ img.tp-slider-alternative-image	{
 .tp-tabs,
 .tp-thumbs						{	box-sizing:content-box !important; -webkit-box-sizing:content-box !important; -moz-box-sizing: content-box !important}
 
-.tp-bullet 						{	width:15px;height:15px; position:absolute; background:#fff; background:rgba(255,255,255,0.3); cursor: pointer;}
+.tp-bullet 						{	width:15px;height:15px; position:absolute; background:black; background:rgba(255,255,255,0.3); cursor: pointer;}
 .tp-bullet.selected,
-.tp-bullet:hover				{	background:#fff;}
+.tp-bullet:hover				{	background:black;}
 
 .tp-bannertimer					{	background:#000; background:rgba(0,0,0,0.15); height:5px;}
 
 
 .tparrows						{	cursor:pointer; background:#000; background:rgba(0,0,0,0.5); width:40px;height:40px;position:absolute; display:block; z-index:1000; }
 .tparrows:hover 				{	background:#000;}
-.tparrows:before				{	font-family: "revicons"; font-size:15px; color:#fff; display:block; line-height: 40px; text-align: center;}
+.tparrows:before				{	font-family: "revicons"; font-size:15px; color:black; display:block; line-height: 40px; text-align: center;}
 .tparrows.tp-leftarrow:before	{	content: '\e824'; }
 .tparrows.tp-rightarrow:before	{	content: '\e825'; }
 
@@ -1205,7 +1205,7 @@ img.tp-slider-alternative-image	{
 .hglayerinfo				   {	  position: fixed;
   bottom: 0px;
   left: 0px;
-  color: #FFF;
+  color: black;
   font-size: 12px;
   line-height: 20px;
   font-weight: 600;

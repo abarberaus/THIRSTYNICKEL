@@ -1,0 +1,52 @@
+
+$global:0.625;
+$azo: 'azo-sans-web', sans-serif;
+$neu: 'neuzeit-grotesk', sans-serif;
+$neu-con: 'neuzeit-grotesk-condensed', sans-serif;
+
+
+
+$screen-1:320px; 	/* iPhone first gen */
+$screen-2:480px; 	/* Samsung Nexus S */
+$screen-3:540px;	/* Droid Razr */
+$screen-4:640px;	/* iPhone 4 and 5 */
+$screen-5:720px;	/* Galaxy Nexus */
+$screen-6:750px;	/* iPhone 6 / Google Nexus */
+$screen-7:800px;	/* Galaxy Note */
+$screen-8:1080px;	/* Iphone 6+ */
+$screen-9:1280px;	/* Desktop */
+
+$fullwidth:1280px;
+
+
+/* ========================= Colors ============================ */
+
+$maincolor: rgba(0,50,50,1);
+$secondcolor: white;
+$thirdcolor: #bd8951;
+$fourthcolor: #333;
+// $fifthcolor: rgba(0,137,136,1);
+
+
+
+
+
+/* ========================== Font ============================= */
+@mixin font($em){
+		font-size: ($em*$global) + px;
+		font-size: ($em) + em;
+}
+
+
+
+@charset "utf-8";
+
+@import 
+	"bourbon/bourbon",
+	"sass/nav",
+	"sass/home",
+	"sass/contact"
+;
+
+
+

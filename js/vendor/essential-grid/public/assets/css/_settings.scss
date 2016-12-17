@@ -288,7 +288,7 @@ font-family: star;
 /* DROP DOWN STYLE FOR ESSENTIAL GRID */
 .esg-filter-wrapper.dropdownstyle					{	min-width:100px;cursor: pointer; position: relative; z-index:1500; -webkit-backface-visibility: hidden; -webkit-transform: translateZ(1px);transform:translateZ(1px)}
 .esg-filter-wrapper.dropdownstyle .esg-filterbutton	{	display:block;}
-.esg-dropdown-wrapper								{	display:none; position: absolute; background:#fff; padding:20px;top:100%; -webkit-backface-visibility: hidden;
+.esg-dropdown-wrapper								{	display:none; position: absolute; background:black; padding:20px;top:100%; -webkit-backface-visibility: hidden;
 -webkit-transform: translateZ(10px);}
 
 .esg-selected-filterbutton							{	color: #999;
@@ -384,7 +384,7 @@ font-family: star;
   width: 40px;
   height: 40px;
   background:url(../images/loader.gif) no-repeat center center;
-  background-color: #fff;
+  background-color: black;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 
@@ -400,7 +400,7 @@ font-family: star;
 .esg-loader.spinner1 {
   width: 40px;
   height: 40px;
-  background-color: #fff;
+  background-color: black;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 
@@ -415,7 +415,7 @@ font-family: star;
 
 
 .esg-loader.spinner5 	{	background:url(../images/loader.gif) no-repeat 10px 10px;
-							background-color:#fff;
+							background-color:black;
 							margin:-22px -22px;
 							width:44px;height:44px;
 							border-radius: 3px;
@@ -496,7 +496,7 @@ font-family: star;
 .esg-loader.spinner3 .bounce3 {
   width: 18px;
   height: 18px;
-  background-color: #fff;
+  background-color: black;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
   border-radius: 100%;
@@ -552,7 +552,7 @@ font-family: star;
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: #fff;
+  background-color: black;
   border-radius: 100%;
   -webkit-animation: esg-bounce 2.0s infinite ease-in-out;
   animation: esg-bounce 2.0s infinite ease-in-out;
@@ -846,7 +846,7 @@ font-family: star;
 .esg-selected-filterbutton										{ margin-right: 0 !important; }
 .esg-singlefilters .esg-filter-checked							{	display:none !important}
 
-/*#firstcontentcontainer	{	background:#fff !important; background-image:none !important}*/
+/*#firstcontentcontainer	{	background:black !important; background-image:none !important}*/
 
 
 /*****************************************
@@ -938,7 +938,7 @@ input.eg-search-input[type="text"]				{	font-family: "Open Sans",sans-serif;outl
 .eg-acp-inner.eg-acp-b	{	left:50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);-moz-transform: translateX(-50%);}
 
 
-.eg-ajax-navbt					{	line-height:21px; background:#000; background:rgba(0,0,0,0.75); color:#fff; border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px; text-transform: uppercase; padding:1px 1px 0px 0px; font-size:11px; font-weight:400; }
+.eg-ajax-navbt					{	line-height:21px; background:#000; background:rgba(0,0,0,0.75); color:black; border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px; text-transform: uppercase; padding:1px 1px 0px 0px; font-size:11px; font-weight:400; }
 .eg-ajax-closer.eg-ajax-navbt	{	padding: 1px 5px 1px 3px;vertical-align: top;}
 .eg-acp-light .eg-ajax-navbt	{	background:#e5e5e5; color:#000;}
 .eg-ajax-closer.eg-ajax-navbt i	{	font-size:13px;}

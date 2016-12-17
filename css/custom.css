@@ -1,0 +1,29 @@
+/* iPhone first gen */
+/* Samsung Nexus S */
+/* Droid Razr */
+/* iPhone 4 and 5 */
+/* Galaxy Nexus */
+/* iPhone 6 / Google Nexus */
+/* Galaxy Note */
+/* Iphone 6+ */
+/* Desktop */
+/* ========================= Colors ============================ */
+/* ========================== Font ============================= */
+.menu_button.icon-menu {
+  width: 20px; }
+
+.bg_image_13 {
+  background-image: none !important;
+  background-size: cover;
+  background-position: center;
+  background-color: #333; }
+
+.bg_image_12 {
+  background-image: none !important; }
+
+.tparrows {
+  color: white; }
+  .tparrows:before {
+    color: white; }
+
+/*# sourceMappingURL=custom.css.map */
