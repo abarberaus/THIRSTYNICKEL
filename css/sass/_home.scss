@@ -1,3 +1,9 @@
+.scheme_original .body_style_boxed .body_wrap {
+	background-color:#333;
+}
+
+
+
 .bg_image_13 {
 	// background-image:url('../tn-imgs/Thirsty Nickel -6.jpg') !important;
 	background-image:none !important;
@@ -6,8 +12,14 @@
 	background-color:#333;
 }
 
-.bg_image_12 {
+.bg_image_12, 
+.bg_image_14, 
+.bg_image_15,
+.bg_image_16,
+.bg_image_17,
+.scheme_original .body_style_boxed .body_wrap {
 	background-image:none !important;
+
 }
 
 
@@ -18,3 +30,134 @@
 		color:white;
 	}
 }
+
+
+
+
+.bg_image_14,
+.bg_image_17 {
+	background:#555;
+}
+
+.bg_image_15,
+.bg_image_16 {
+	background:#333;
+}
+
+
+.tn-border,
+.top_panel_over .header_style_6 .slider_wrap .slotholder:after,
+.top_panel_over .slider_wrap .slotholder:after,
+.sc_section.section_style_thick:after,
+.scheme_original .sc_events_style_events-2 .sc_events_item,
+.scheme_original input[type="text"], 
+.scheme_original input[type="number"], 
+.scheme_original input[type="email"], 
+.scheme_original input[type="search"], 
+.scheme_original input[type="tel"], 
+.scheme_original input[type="password"], 
+.scheme_original select, 
+.scheme_original textarea {
+	border:3px solid white;
+}
+
+.tn-border,
+.scheme_original input[type="text"]:hover, 
+.scheme_original input[type="number"]:hover, 
+.scheme_original input[type="email"]:hover, 
+.scheme_original input[type="search"]:hover, 
+.scheme_original input[type="tel"]:hover, 
+.scheme_original input[type="password"]:hover, 
+.scheme_original select:hover, 
+.scheme_original textarea:hover {
+	border-color:#555;
+}
+
+
+.sc_services_item_description {
+	color:white;
+}
+
+.sc_services_descr.sc_item_descr {
+	color:white;
+
+}
+
+
+
+
+
+.tp-bgimg {
+	// position: relative;
+	// z-index:1;
+	&:after {
+		content:'';
+		position: absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		background:#333;
+		opacity: 0.5;
+		z-index: 1;
+		// border:3px solid white;
+
+	}
+}
+
+.slider_boxed, 
+.content_wrap, 
+.container, 
+.content_container  {
+	width:95%;
+}
+
+.contacts .slider_boxed, 
+.contacts .content_wrap, 
+.contacts .container, 
+.contacts .content_container {
+	width:100%;
+}
+
+
+
+
+.chi-town {
+	background:white;
+	overflow:hidden;
+}
+
+
+
+.sc_emailer .sc_emailer_opened .inited {
+	width:90%;
+}
+
+
+.row:not(.columns_fluid)>[class*="column-"], 
+.columns_wrap:not(.columns_fluid)>[class*="column-"] {
+
+	@media screen and (min-width:$screen-2) {
+		width:49%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

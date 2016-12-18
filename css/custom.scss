@@ -13,11 +13,15 @@ $screen-4:640px;	/* iPhone 4 and 5 */
 $screen-5:720px;	/* Galaxy Nexus */
 $screen-6:750px;	/* iPhone 6 / Google Nexus */
 $screen-7:800px;	/* Galaxy Note */
-$screen-8:1080px;	/* Iphone 6+ */
+$screen-8:1023px;	/* Iphone 6+ */
 $screen-9:1280px;	/* Desktop */
 
 $fullwidth:1280px;
 
+
+$sm-sp-unit:0.5em;
+$md-sp-unit:1.5em;
+$lg-sp-unit:3em;
 
 /* ========================= Colors ============================ */
 
@@ -37,6 +41,9 @@ $fourthcolor: #333;
 		font-size: ($em) + em;
 }
 
+.page_wrap {
+	max-width:$fullwidth;
+}
 
 
 @charset "utf-8";
