@@ -36,6 +36,11 @@ $fourthcolor: #333;
 
 
 /* ========================== Font ============================= */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 @mixin font($em){
 		font-size: ($em*$global) + px;
 		font-size: ($em) + em;
