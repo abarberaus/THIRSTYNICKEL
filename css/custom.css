@@ -62,8 +62,11 @@
       width: 65%; } }
   @media screen and (min-width: 1023px) {
     .logo-svg {
-      width: 40%;
-      margin: 8.1em 1.5em; } }
+      width: 70%;
+      margin: 8.1em auto; } }
+
+.contact_logo {
+  left: 40% !important; }
 
 @media screen and (min-width: 480px) {
   .contacts .logo-svg {
