@@ -106,6 +106,23 @@
 	}
 }
 
+.tp-caption {
+	h2 {
+		font-size:40px;
+		color:$secondcolor;
+	}
+
+	h4 {
+		font-size:25px;
+		color:$secondcolor;
+	}
+}
+
+
+
+
+
+
 .slider_boxed, 
 .content_wrap, 
 .container, 
@@ -159,7 +176,7 @@
 
 
 .bio {
-	@include padding($md-sp-unit);
+	@include padding($md-sp-unit $lg-sp-unit);
 	background:#444;
 
 	.container {

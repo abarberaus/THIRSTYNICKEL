@@ -1,3 +1,6 @@
+@font-face {
+  font-family: 'Langdon';
+  src: url("../css/fonts/Langdon.otf"); }
 /* iPhone first gen */
 /* Samsung Nexus S */
 /* Droid Razr */
@@ -12,17 +15,46 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Langdon", sans-serif; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-family: "Langdon", sans-serif;
+    font-weight: 800; }
+
 .page_wrap {
   max-width: 1280px; }
 
 .menu_button.icon-menu {
-  width: 20px; }
+  width: 50px; }
+  .menu_button.icon-menu .word {
+    font-size: 0.4375px;
+    font-size: 0.7em;
+    font-family: "Tinos",serif; }
+
+.icon-menu:before {
+  content: ''; }
+
+.burger:before {
+  content: '\e8ba';
+  font-family: "fontello"; }
 
 .top_panel_over .header_mobile .menu_button {
-  top: 3em; }
+  top: 1.8em;
+  right: 1em;
+  left: auto;
+  position: fixed; }
+
+.header_mobile .side_wrap .close {
+  display: block;
+  z-index: 3000;
+  color: red;
+  font-size: 1.25px;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: sans-serif; }
 
 .header_mobile .side_wrap {
-  top: 12.1em; }
+  top: 0; }
 
 /* Padding Remover */
 .top_panel_over .header_mobile .logo,
@@ -33,48 +65,14 @@
   position: relative !important;
   height: 0; }
 
+div.logo {
+  float: left; }
+
 .top_panel_middle.menu_main_wrap {
   position: absolute;
   top: 1em;
   right: 1em; }
 
-.logo-svg {
-  width: 35%;
-  position: relative;
-  overflow: hidden;
-  margin: 0 12.5%;
-  display: inline-block;
-  clear: both;
-  fill: white;
-  margin: 1.5em 0;
-  -webkit-transition: all 0.3s 0.3s ease;
-  -moz-transition: all 0.3s 0.3s ease;
-  transition: all 0.3s 0.3s ease; }
-  @media screen and (min-width: 480px) {
-    .logo-svg {
-      margin: 4.5em 0 0;
-      width: 43%; } }
-  @media screen and (min-width: 720px) {
-    .logo-svg {
-      width: 50%; } }
-  @media screen and (min-width: 800px) {
-    .logo-svg {
-      width: 65%; } }
-  @media screen and (min-width: 1023px) {
-    .logo-svg {
-      width: 70%;
-      margin: 8.1em auto; } }
-
-.contact_logo {
-  left: 40% !important; }
-
-@media screen and (min-width: 480px) {
-  .contacts .logo-svg {
-    margin: 1.5em 0; } }
-@media screen and (min-width: 1023px) {
-  .contacts .logo-svg {
-    width: 40%;
-    margin: 8.1em 1.5em; } }
 .contacts .container {
   background: #666; }
 
@@ -152,6 +150,13 @@
   opacity: 0.6;
   z-index: 1; }
 
+.tp-caption h2 {
+  font-size: 40px;
+  color: white; }
+.tp-caption h4 {
+  font-size: 25px;
+  color: white; }
+
 .slider_boxed,
 .content_wrap,
 .container,
@@ -183,7 +188,7 @@
     width: 49%; } }
 
 .bio {
-  padding: 1.5em;
+  padding: 1.5em 3em;
   background: #444; }
   .bio .container {
     max-width: 900px;

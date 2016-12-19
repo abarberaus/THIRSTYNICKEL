@@ -1,8 +1,18 @@
+// @font-face {
+//   font-family: 'Langdon';
+//   src: url('/fonts/Langdon.otf'); IE9 Compat Modes
+//   src: url('/fonts/Langdon.otf') format('embedded-opentype'); /* IE6-IE8 */
+// }
+
+@font-face {
+  font-family:'Langdon';
+  src:url('../css/fonts/Langdon.otf');
+}
+
 
 $global:0.625;
-$azo: 'azo-sans-web', sans-serif;
-$neu: 'neuzeit-grotesk', sans-serif;
-$neu-con: 'neuzeit-grotesk-condensed', sans-serif;
+$headline-copy: 'Langdon', sans-serif;
+
 
 
 
@@ -40,6 +50,18 @@ $fourthcolor: #333;
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:$headline-copy;
+	// font-weight:800;
+	a {
+		font-family:$headline-copy;
+		font-weight:800;
+
+
+	}
+}
+
 
 @mixin font($em){
 		font-size: ($em*$global) + px;
