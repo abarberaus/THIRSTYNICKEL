@@ -17,9 +17,6 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Langdon", sans-serif; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    font-family: "Langdon", sans-serif;
-    font-weight: 800; }
 
 .page_wrap {
   max-width: 1280px; }
@@ -246,6 +243,34 @@ div.logo {
         vertical-align: top; }
         .bio p:nth-of-type(2) {
           margin: 1em 0 0 2%; } }
+
+.buffalo {
+  background-color: #333;
+  background-image: url("../tn-imgs/Mike Frost - IMG_5789.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 1.5em; }
+  .buffalo img {
+    display: none; }
+  .buffalo h2 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 1em;
+    margin: 1em auto; }
+  .buffalo p {
+    font-size: 0.8125px;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin: 1em auto 0;
+    width: 100%;
+    color: white; }
+  .buffalo .sc_button {
+    margin: 1em 0 0; }
 
 .instafeed {
   padding: 1.5em;
