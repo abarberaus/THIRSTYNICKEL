@@ -91,6 +91,26 @@
         z-index: 5;
         // border:3px solid white;
     }
+    @media screen and (min-width:$screen-8) and (orientation:landscape) {
+    	&:after {
+    		top:12%;
+    	}
+    }
+    @media screen and (min-width:$screen-4) and (min-height:600px) {
+    	&:after {
+    		top:10%;
+    	}
+    }
+    @media screen and (min-width:$screen-7) and (min-height:600px) {
+    	&:after {
+    		top:8%;
+    	}
+    }
+    @media screen and (min-width:$screen-8) and (min-height:600px) {
+    	&:after {
+    		top:12%;
+    	}
+    }
 }
 
 .item {
@@ -197,6 +217,122 @@
 	            font-size: 30px;
 	        }
         }
+    }
+
+    @media screen and (min-width:$screen-8) and (orientation:landscape) {
+    	img {
+    		max-width:120% !important;
+    	}
+
+    	&:after {
+	        content: '';
+	        position: absolute;
+	        width: 90%;
+	        height: 85%;
+	        top: 10%;
+	        left: 5%;
+	        // background:#333;
+	        opacity: 1;
+	        z-index: 1;
+	        border: 3px solid white;
+	    }
+    }
+    @media screen and (min-width:$screen-4) and (min-height:600px) {
+    	height:33em;
+    	img {
+    		max-width:120% !important;
+    	}
+        .carousel-caption {
+        	top:45%;
+
+
+        	h2 {
+	            font-size: 55px;
+	        }
+	        h3 {
+	            font-size: 48px;
+	        }
+	        h4 {
+	            font-size: 30px;
+	        }
+        }
+    	&:after {
+	        content: '';
+	        position: absolute;
+	        width: 90%;
+	        height: 90%;
+	        top: 5%;
+	        left: 5%;
+	        // background:#333;
+	        opacity: 1;
+	        z-index: 1;
+	        border: 3px solid white;
+	    }
+    }
+
+    @media screen and (min-width:$screen-4) and (min-height:600px) {
+    	height:38em;
+    	img {
+    		max-width:120% !important;
+    	}
+        .carousel-caption {
+        	top:50%;
+
+
+        	h2 {
+	            font-size: 55px;
+	        }
+	        h3 {
+	            font-size: 48px;
+	        }
+	        h4 {
+	            font-size: 30px;
+	        }
+        }
+    	&:after {
+	        content: '';
+	        position: absolute;
+	        width: 90%;
+	        height: 90%;
+	        top: 5%;
+	        left: 5%;
+	        // background:#333;
+	        opacity: 1;
+	        z-index: 1;
+	        border: 3px solid white;
+	    }
+    }
+    @media screen and (min-width:$screen-8) and (min-height:600px) {
+    	height:100vh;
+    	img {
+    		max-width:120% !important;
+    	}
+        .carousel-caption {
+        	top:50%;
+
+
+        	h2 {
+	            font-size: 65px;
+	        }
+	        h3 {
+	            font-size: 58px;
+	        }
+	        h4 {
+	            font-size: 40px;
+	        }
+        }
+    	&:after {
+	        content: '';
+	        position: absolute;
+	        width: 90%;
+	        height: 85%;
+	        top: 10%;
+	        left: 5%;
+	        // background:#333;
+	        opacity: 1;
+	        z-index: 1;
+	        border: 3px solid white;
+	    }
     }
 }
 

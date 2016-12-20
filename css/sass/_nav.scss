@@ -97,7 +97,7 @@
 	    height: 50px;
 	}
 }
-div.logo {
+.header_mobile div.logo {
 	// height:50px;
 	float:left;
 	// clear:both;
@@ -117,12 +117,28 @@ div.logo {
 }
 // .top_panel_middle.menu_main_wrap
 
-.top_panel_middle.menu_main_wrap {
+.top_panel_middle .menu_main_wrap {
 	position: absolute;
-	top:1em;
-	right:1em;
+	top:1.3em;
+	right:3em;
+	@include margin(0);
+
+
+
+	.menu-item {
+		a {
+			font-size:18px;
+		}
+	}
 }
 
+.top_panel_middle .logo {
+	@include margin(0.5em -10% 0 10%);
+	// width:200px;
+	.logo_main {
+		height:70px;
+	}
+}
 // .logo-svg {
 // 	width:35%;
 // 	// min-height:80px;
