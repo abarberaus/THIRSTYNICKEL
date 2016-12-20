@@ -16,7 +16,8 @@
   box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Langdon", sans-serif; }
+  font-family: "Langdon", sans-serif;
+  text-transform: uppercase; }
 
 .page_wrap {
   max-width: 1280px; }
