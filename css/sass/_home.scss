@@ -426,7 +426,7 @@
 // }
 
 .buffalo {
-    background-color: darken($thirdcolor, 50%);
+    background-color: darken($thirdcolor, 45%);
     background-image: url('../tn-imgs/Mike Frost - IMG_5789.JPG');
     background-position: center;
     background-repeat: no-repeat;
@@ -471,6 +471,8 @@
         }
         @include padding($md-sp-unit);
         background-image:none;
+    	background-color: darken($thirdcolor, 50%);
+
         background-blend-mode:normal;
         h2,
         p {
@@ -522,6 +524,8 @@
     @media screen and (min-width:$screen-5) and (min-height:600px) {
         @include padding($lg-sp-unit);
         background-image: none;
+    	background-color: darken($thirdcolor, 50%);
+
         background-blend-mode: normal;
         h2,
         p {
@@ -550,7 +554,7 @@
 }
 
 .bio {
-    background-color: darken($thirdcolor, 50%);
+    background-color: darken($thirdcolor, 40%);
     background-image: url('../tn-imgs/KCST.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -600,6 +604,8 @@
         }
         @include padding($md-sp-unit);
         background-image:none;
+    	background-color: darken($thirdcolor, 50%);
+
         background-blend-mode:normal;
         h2,
         p {
@@ -659,6 +665,8 @@
     @media screen and (min-width:$screen-5) and (min-height:600px) {
         @include padding($lg-sp-unit);
         background-image: none;
+    	background-color: darken($thirdcolor, 50%);
+
         background-blend-mode: normal;
         h2,
         p {
@@ -722,7 +730,7 @@
             width: 48%;
         }
     }
-    @media screen and (min-width:$screen-8) and (min-height:600px) {
+    @media screen and (min-width:$screen-9) and (min-height:600px) {
         @include padding($lg-sp-unit);
         background-image: none;
         background-blend-mode: normal;
@@ -864,3 +872,75 @@
         }
     }
 }
+
+.booking {
+
+	position: relative;
+	z-index:1;
+	@include padding($lg-sp-unit*5 0);
+	.sc_title.sc_title_style_4 {
+		font-size: 45px;
+		@include margin(0 auto);
+	}
+	.sc_button.sc_button_style_filled.style_color_light {
+		@include padding(1.7em $lg-sp-unit);		
+	}
+	&:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        // background:#333;
+        background-image: url('../tn-imgs/female_artist_stage.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top center;
+        opacity: 1;
+        z-index: -1;
+        // border:3px solid white;
+    }
+   	&:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background:#333;
+        // background-image: url('../tn-imgs/female_artist_stage.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position:center;
+        opacity: 0.4;
+        z-index: 0;
+        // border:3px solid white;
+    }
+
+    @media screen and (min-width:$screen-3) and (orientation: landscape) {
+        @include padding($md-sp-unit*5 0);
+
+    }
+    @media screen and (min-width:$screen-4) and (orientation: landscape) {
+        @include padding($md-sp-unit*7 0);
+
+    }
+    @media screen and (min-width:$screen-3) and (min-height:600px) {
+		@include padding($lg-sp-unit*5 0);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
