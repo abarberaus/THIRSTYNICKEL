@@ -378,15 +378,55 @@ h1, h2, h3, h4, h5, h6 {
 .contacts .content_container {
   width: 100%; }
 
+.happy-hour {
+  padding: 1.5em;
+  background-color: #222; }
+  .happy-hour h1 {
+    color: #56e0f9; }
+  .happy-hour .sc_title.sc_title_style_3 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2em; }
+    @media screen and (min-width: 960px) {
+      .happy-hour .sc_title.sc_title_style_3 {
+        font-size: 2.15em; } }
+
 .chi-town {
-  background: white;
-  background-image: url("../tn-imgs/chicago_shirt.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: #444;
   overflow: hidden;
   width: 100%;
-  height: 20em; }
+  position: relative;
+  padding: 3em 1.5em; }
+  .chi-town h1 {
+    max-width: 450px;
+    font-size: 3em;
+    line-height: 1.1em;
+    margin: 0 auto;
+    text-align: left !important; }
+  .chi-town img {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 1.5em auto;
+    max-width: 450px; }
+    @media screen and (min-width: 540px) {
+      .chi-town img {
+        display: inline-block;
+        margin: 1.5em 2.3%;
+        width: 45%; } }
+    @media screen and (min-width: 640px) {
+      .chi-town img {
+        margin: 1.5em 2%;
+        width: 28.1%; } }
+  .chi-town .fade-img {
+    opacity: 0.5;
+    background-color: #25d7f7;
+    background-blend-mode: overlay; }
+  .chi-town .left {
+    display: none; }
+    @media screen and (min-width: 640px) {
+      .chi-town .left {
+        display: inline-block; } }
 
 .sc_emailer .sc_emailer_opened .inited {
   width: 90%; }
