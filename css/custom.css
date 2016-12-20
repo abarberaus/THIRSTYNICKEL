@@ -375,36 +375,6 @@ h1, h2, h3, h4, h5, h6 {
   .columns_wrap:not(.columns_fluid) > [class*="column-"] {
     width: 49%; } }
 
-.bio {
-  padding: 1.5em 3em;
-  background: #444;
-  background-color: #01181c; }
-  .bio .container {
-    max-width: 900px;
-    margin: 0 auto; }
-  .bio h2 {
-    font-size: 1.5625px;
-    font-size: 2.5em;
-    margin: 1em auto 0;
-    color: white; }
-  .bio p {
-    font-size: 0.8125px;
-    font-size: 1.3em;
-    line-height: 1.4em;
-    margin: 1em auto 0;
-    width: 100%;
-    color: white; }
-  @media screen and (min-width: 640px) {
-    .bio {
-      padding: 3em; }
-      .bio p {
-        margin: 1em 2% 0 0;
-        width: 47.7%;
-        display: inline-block;
-        vertical-align: top; }
-        .bio p:nth-of-type(2) {
-          margin: 1em 0 0 2%; } }
-
 .buffalo {
   background-color: #01181c;
   background-image: url("../tn-imgs/Mike Frost - IMG_5789.JPG");
@@ -497,6 +467,119 @@ h1, h2, h3, h4, h5, h6 {
         max-width: auto;
         mix-blend-mode: screen; }
       .buffalo .sc_button {
+        margin: 2em 0 0;
+        max-width: auto;
+        width: 48%; } }
+
+.bio {
+  background-color: #01181c;
+  background-image: url("../tn-imgs/KCST.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5em; }
+  .bio .container {
+    max-width: 700px;
+    margin: 0 auto; }
+  .bio img {
+    display: none; }
+  .bio h2 {
+    color: #fff;
+    font-size: 45px;
+    line-height: 1em;
+    width: 90%;
+    margin: 0 0 0.5em;
+    max-width: 420px; }
+  .bio p {
+    font-size: 0.8125px;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin: 0 0 0.5em;
+    width: 100%;
+    max-width: 420px;
+    color: white; }
+  .bio .sc_button {
+    margin: 1.5em 0;
+    width: 100%;
+    max-width: 420px;
+    font-size: 0.9375px;
+    font-size: 1.5em; }
+  @media screen and (min-width: 540px) and (orientation: landscape) {
+    .bio {
+      padding: 1.5em 3em; } }
+  @media screen and (min-width: 640px) and (orientation: landscape) {
+    .bio {
+      padding: 1.5em;
+      background-image: none;
+      background-blend-mode: normal; }
+      .bio h2,
+      .bio p {
+        width: 60%;
+        float: left;
+        clear: left; }
+        .bio h2:nth-of-type(2),
+        .bio p:nth-of-type(2) {
+          width: 100%;
+          max-width: 100%; }
+      .bio img {
+        display: block;
+        float: right;
+        clear: right;
+        width: 38%; }
+      .bio .sc_button {
+        margin: 2em 0 0;
+        width: 38%; } }
+  @media screen and (min-width: 750px) and (orientation: landscape) {
+    .bio {
+      padding: 1.5em;
+      background-image: none;
+      background-blend-mode: normal; }
+      .bio h2,
+      .bio p {
+        width: 50%;
+        float: left;
+        clear: left; }
+        .bio h2:nth-of-type(2),
+        .bio p:nth-of-type(2) {
+          width: 100%;
+          max-width: 100%; }
+      .bio img {
+        display: block;
+        float: right;
+        clear: right;
+        width: 48%; }
+      .bio .sc_button {
+        margin: 2em 0 0;
+        width: 48%; } }
+  @media screen and (min-width: 720px) and (min-height: 600px) {
+    .bio {
+      padding: 3em;
+      background-image: none;
+      background-blend-mode: normal; }
+      .bio h2,
+      .bio p {
+        width: 50%;
+        float: left;
+        clear: left;
+        max-width: auto; }
+        .bio h2:nth-of-type(2),
+        .bio p:nth-of-type(2) {
+          width: 100%;
+          max-width: 100%; }
+      .bio img {
+        display: block;
+        float: right;
+        clear: right;
+        width: 48%;
+        max-width: 330px;
+        max-width: auto;
+        mix-blend-mode: screen; }
+      .bio .sc_button {
         margin: 2em 0 0;
         max-width: auto;
         width: 48%; } }
