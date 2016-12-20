@@ -128,10 +128,17 @@
 	.menu-item {
 		a {
 			font-size:18px;
+			@include margin(0 3px);
 		}
 	}
 }
-
+.scheme_original .menu_main_nav>li.current-menu-ancestor>a {
+	background-color:$thirdcolor;
+}
+.scheme_original .menu_main_nav>li>a:hover {
+	background-color:$thirdcolor;
+	text-decoration:none;
+}
 .top_panel_middle .logo {
 	@include margin(0.5em -10% 0 10%);
 	// width:200px;
@@ -139,60 +146,9 @@
 		height:70px;
 	}
 }
-// .logo-svg {
-// 	width:35%;
-// 	// min-height:80px;
-// 	position: relative;
-// 	overflow:hidden;
-// 	// max-width:400px;
-// 	@include margin(0 12.5%);
-// 	display:inline-block;
-// 	clear:both;
-// 	fill:white;
-// 	@include margin($md-sp-unit 0);
-// 	@include transition(all 0.3s 0.3s ease);
-
-// 	@media screen and (min-width:$screen-2) {
-// 		@include margin($lg-sp-unit*1.5 0 0);
-// 		width:43%;
-// 	}
-
-// 	@media screen and (min-width:$screen-5) {
-// 		width:50%;
-// 	}
-
-// 	@media screen and (min-width:$screen-7) {
-// 		width:65%;
-// 	}
-
-// 	@media screen and (min-width:$screen-8) {
-// 		width:70%;
-// 		@include margin($lg-sp-unit*2.7 auto);
-// 	}
-
-
-// }
-
-// .contact_logo {
-// 	// position: relative !important;
-// 	// @include margin(0 auto);
-// 	// width:50%;
-// 	left:40% !important;
-// 	// right:50%;
-// }
 
 .contacts {
-	// .logo-svg {
-		
-	// 	@media screen and (min-width:$screen-2) {
-	// 		@include margin($md-sp-unit 0);
-	// 	}
 
-	// 	@media screen and (min-width:$screen-8) {
-	// 		width:40%;
-	// 		@include margin($lg-sp-unit*2.7 $md-sp-unit);
-	// 	}
-	// }
 	.container {
 		background:#666;
 	}

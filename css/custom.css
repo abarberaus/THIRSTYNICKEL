@@ -103,7 +103,15 @@ h1, h2, h3, h4, h5, h6 {
   right: 3em;
   margin: 0; }
   .top_panel_middle .menu_main_wrap .menu-item a {
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 0 3px; }
+
+.scheme_original .menu_main_nav > li.current-menu-ancestor > a {
+  background-color: #25d7f7; }
+
+.scheme_original .menu_main_nav > li > a:hover {
+  background-color: #25d7f7;
+  text-decoration: none; }
 
 .top_panel_middle .logo {
   margin: 0.5em -10% 0 10%; }
