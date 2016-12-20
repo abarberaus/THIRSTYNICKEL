@@ -1,0 +1,78 @@
+.buffalo {
+	background-color:darken($thirdcolor,50%);
+
+	background-image:url('../tn-imgs/Mike Frost - IMG_5789.JPG');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+
+	background-blend-mode:overlay;
+	width:100%;
+	// height:30em;
+	overflow:hidden;
+	position: relative;
+
+	@include padding($md-sp-unit);
+	img {
+		display: none;
+	}
+
+	h2 {
+		color:$secondcolor;
+		font-size:45px;
+		line-height: 1em;
+		width:90%;
+		@include margin(0 0 $sm-sp-unit);
+		max-width: 420px;
+
+
+
+	}
+
+	p {
+		@include font(1.3);
+		line-height: 1.4em;
+		@include margin(0 0 $sm-sp-unit);
+		width:100%;
+		max-width: 420px;
+		color:white;
+	}
+
+	.sc_button {
+		@include margin($md-sp-unit 0);
+		width:100%;
+		max-width: 420px;
+		@include font(1.5);
+	}
+
+
+	@media screen and (min-width:$screen-3) and (orientation: landscape) {
+		@include padding($md-sp-unit $lg-sp-unit);
+	}
+
+
+	@media screen and (min-width:$screen-4) and (orientation: landscape) {
+		@include padding($md-sp-unit);
+		background-image:none;
+		background-blend-mode:normal;
+		h2, p {
+			width:50%;
+			float:right;
+			clear:right;
+		}
+		img{
+			display: block;
+			float:left;
+			clear:left;
+			width:48%;
+		}
+		.sc_button {
+			// vertical-align: top;
+			// clear:right;
+			// float:left;
+			@include margin(2em 0 0);
+			width:48%;
+		}
+
+	}
+}
