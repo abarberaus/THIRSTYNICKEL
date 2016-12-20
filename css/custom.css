@@ -176,6 +176,19 @@ h1, h2, h3, h4, h5, h6 {
 .sc_services_descr.sc_item_descr {
   color: white; }
 
+.scheme_original .sc_button.style_color_light.sc_button_style_filled {
+  background: #25d7f7;
+  border: 3px solid #25d7f7;
+  padding: 1.5em 3em;
+  -webkit-transition: background-color 0.3s 0.1s ease, color 0.3s 0.1s ease;
+  -moz-transition: background-color 0.3s 0.1s ease, color 0.3s 0.1s ease;
+  transition: background-color 0.3s 0.1s ease, color 0.3s 0.1s ease; }
+  .scheme_original .sc_button.style_color_light.sc_button_style_filled:hover {
+    background: transparent;
+    border: 3px solid #25d7f7;
+    color: #25d7f7;
+    text-decoration: none; }
+
 .carousel-inner:after {
   content: '';
   position: absolute;
@@ -458,17 +471,17 @@ h1, h2, h3, h4, h5, h6 {
         width: 50%;
         float: right;
         clear: right;
-        max-width: auto; }
+        max-width: 100%; }
       .buffalo img {
         display: block;
         float: left;
         clear: left;
         width: 48%;
-        max-width: auto;
+        max-width: 100%;
         mix-blend-mode: screen; }
       .buffalo .sc_button {
-        margin: 2em 0 0;
-        max-width: auto;
+        margin: 1em 0 0;
+        max-width: 100%;
         width: 48%; } }
 
 .bio {
@@ -483,9 +496,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin: 0 auto;
   padding: 1.5em; }
-  .bio .container {
-    max-width: 700px;
-    margin: 0 auto; }
   .bio img {
     display: none; }
   .bio h2 {
@@ -566,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 50%;
         float: left;
         clear: left;
-        max-width: auto; }
+        max-width: 100%; }
         .bio h2:nth-of-type(2),
         .bio p:nth-of-type(2) {
           width: 100%;
@@ -576,13 +586,70 @@ h1, h2, h3, h4, h5, h6 {
         float: right;
         clear: right;
         width: 48%;
-        max-width: 330px;
-        max-width: auto;
+        max-width: 100%;
+        margin: 0 0 0.5em 0.5em;
         mix-blend-mode: screen; }
       .bio .sc_button {
-        margin: 2em 0 0;
-        max-width: auto;
+        margin: 1em 0 0;
+        max-width: 100%;
         width: 48%; } }
+  @media screen and (min-width: 800px) and (min-height: 600px) {
+    .bio {
+      padding: 3em;
+      background-image: none;
+      background-blend-mode: normal; }
+      .bio h2,
+      .bio p {
+        width: 50%;
+        float: left;
+        clear: left;
+        max-width: 100%; }
+        .bio h2:nth-of-type(2),
+        .bio p:nth-of-type(2) {
+          width: 50%;
+          max-width: 100%; }
+      .bio img {
+        display: block;
+        float: right;
+        clear: right;
+        width: 48%;
+        max-width: 100%;
+        margin: 0 0 0.5em 0.5em;
+        mix-blend-mode: screen; }
+      .bio .sc_button {
+        margin: 1em 0 0;
+        max-width: 100%;
+        width: 48%; } }
+  @media screen and (min-width: 1023px) and (min-height: 600px) {
+    .bio {
+      padding: 3em;
+      background-image: none;
+      background-blend-mode: normal; }
+      .bio h2,
+      .bio p {
+        width: 50%;
+        float: left;
+        clear: left;
+        max-width: 100%; }
+        .bio h2:nth-of-type(2),
+        .bio p:nth-of-type(2) {
+          width: 100%;
+          max-width: 100%; }
+      .bio img {
+        display: block;
+        float: right;
+        clear: right;
+        width: 48%;
+        margin: 0 0 0.5em 0.5em;
+        mix-blend-mode: screen; }
+      .bio .sc_button {
+        margin: 1em 0 0;
+        max-width: 100%;
+        width: 48%; } }
+
+.sc_events .sc_button.style_color_light.sc_button_style_filled {
+  padding: 1.5em;
+  margin: 1em 0 0; }
 
 .instafeed {
   padding: 1.5em;

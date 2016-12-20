@@ -73,6 +73,22 @@
     color: white;
 }
 
+
+.scheme_original .sc_button.style_color_light.sc_button_style_filled {
+	background:$thirdcolor;
+	border:3px solid $thirdcolor;
+	@include padding($md-sp-unit $lg-sp-unit);
+	@include transition(background-color 0.3s 0.1s ease, color 0.3s 0.1s ease);
+	&:hover {
+		background:transparent;
+		border:3px solid $thirdcolor;
+		
+		color:$thirdcolor;
+		text-decoration: none;
+	}
+}
+
+
 .carousel-inner {
     // max-height: 25em;
     &:after {
@@ -512,22 +528,22 @@
             width: 50%;
             float: right;
             clear: right;
-            max-width: auto;
+            max-width: 100%;
         }
         img {
             display: block;
             float: left;
             clear: left;
             width: 48%;
-            max-width: auto;
+            max-width: 100%;
             mix-blend-mode: screen;
         }
         .sc_button {
             // vertical-align: top;
             // clear:right;
             // float:left;
-            @include margin(2em 0 0);
-            max-width: auto;
+            @include margin(1em 0 0);
+            max-width: 100%;
             width: 48%;
         }
     }
@@ -546,10 +562,10 @@
     position: relative;
     @include margin(0 auto);
     @include padding($md-sp-unit);
-    .container {
-    	max-width: 700px;
-    	@include margin(0 auto);
-    }
+    // .container {
+    // 	max-width: 700px;
+    // 	@include margin(0 auto);
+    // }
     img {
         display: none;
     }
@@ -649,7 +665,7 @@
             width: 50%;
             float: left;
             clear: left;
-            max-width: auto;
+            max-width: 100%;
             &:nth-of-type(2) {
             	width:100%;
             	max-width: 100%;
@@ -660,21 +676,94 @@
             float: right;
             clear: right;
             width: 48%;
-            max-width: 330px;
-            max-width: auto;
+            max-width: 100%;
+            @include margin(0 0 $sm-sp-unit $sm-sp-unit);
             mix-blend-mode: screen;
         }
         .sc_button {
             // vertical-align: top;
             // clear:right;
             // float:left;
-            @include margin(2em 0 0);
-            max-width: auto;
+            @include margin(1em 0 0);
+            max-width: 100%;
+            width: 48%;
+        }
+    }
+    @media screen and (min-width:$screen-7) and (min-height:600px) {
+        @include padding($lg-sp-unit);
+        background-image: none;
+        background-blend-mode: normal;
+        h2,
+        p {
+            width: 50%;
+            float: left;
+            clear: left;
+            max-width: 100%;
+            &:nth-of-type(2) {
+            	width:50%;
+            	max-width: 100%;
+            }
+        }
+        img {
+            display: block;
+            float: right;
+            clear: right;
+            width: 48%;
+            max-width: 100%;
+            @include margin(0 0 $sm-sp-unit $sm-sp-unit);
+            mix-blend-mode: screen;
+        }
+        .sc_button {
+            // vertical-align: top;
+            // clear:right;
+            // float:left;
+            @include margin(1em 0 0);
+            max-width: 100%;
+            width: 48%;
+        }
+    }
+    @media screen and (min-width:$screen-8) and (min-height:600px) {
+        @include padding($lg-sp-unit);
+        background-image: none;
+        background-blend-mode: normal;
+        h2,
+        p {
+            width: 50%;
+            float: left;
+            clear: left;
+            max-width: 100%;
+            &:nth-of-type(2) {
+            	width:100%;
+            	max-width: 100%;
+            }
+        }
+        img {
+            display: block;
+            float: right;
+            clear: right;
+            width: 48%;
+            // max-width: 330px;
+            @include margin(0 0 $sm-sp-unit $sm-sp-unit);
+            mix-blend-mode: screen;
+        }
+        .sc_button {
+            // vertical-align: top;
+            // clear:right;
+            // float:left;
+            @include margin(1em 0 0);
+            max-width: 100%;
             width: 48%;
         }
     }
 }
+.sc_events {
+	.sc_button.style_color_light.sc_button_style_filled {
+		@include padding($md-sp-unit);
+		@include margin(1em 0 0);
+		// width:90%;
 
+	}
+}
 .instafeed {
     @include padding($md-sp-unit);
     @include margin(0 auto);
