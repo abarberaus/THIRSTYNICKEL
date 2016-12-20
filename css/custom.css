@@ -19,9 +19,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Langdon", sans-serif;
   text-transform: uppercase; }
 
-a:hover {
-  text-decoration: none;
-}
 .page_wrap {
   max-width: 1280px; }
 
@@ -171,7 +168,43 @@ div.logo {
 .sc_services_descr.sc_item_descr {
   color: white; }
 
-.tp-bgimg:after {
+.carousel-inner:after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background-image: url("../tn-imgs/thirstynickel logo white.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: center 10px;
+  opacity: 1;
+  z-index: 5; }
+
+.item .carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 40%;
+  height: auto;
+  z-index: 2;
+  text-align: center; }
+  .item .carousel-caption .btn {
+    text-shadow: none; }
+  .item .carousel-caption h2 {
+    font-size: 45px;
+    margin: 0 auto;
+    color: #fff; }
+  .item .carousel-caption h3 {
+    font-size: 38px;
+    margin: 0 auto;
+    color: #fff; }
+  .item .carousel-caption h4 {
+    font-size: 20px;
+    margin: 0 auto;
+    color: #fff; }
+.item:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -180,14 +213,35 @@ div.logo {
   left: 0;
   background: #333;
   opacity: 0.6;
-  z-index: 1; }
-
-.tp-caption h2 {
-  font-size: 40px;
-  color: #fff; }
-.tp-caption h4 {
-  font-size: 25px;
-  color: #fff; }
+  z-index: 0; }
+.item:after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  opacity: 1;
+  z-index: 1;
+  border: 3px solid white; }
+@media screen and (min-width: 540px) and (orientation: landscape) {
+  .item {
+    height: 100vh; }
+    .item .carousel-caption {
+      top: 43%; }
+      .item .carousel-caption h3 {
+        font-size: 43px; } }
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  .item {
+    height: 100vh; }
+    .item .carousel-caption {
+      top: 45%; }
+      .item .carousel-caption h2 {
+        font-size: 55px; }
+      .item .carousel-caption h3 {
+        font-size: 48px; }
+      .item .carousel-caption h4 {
+        font-size: 30px; } }
 
 .slider_boxed,
 .content_wrap,
@@ -221,7 +275,8 @@ div.logo {
 
 .bio {
   padding: 1.5em 3em;
-  background: #444; }
+  background: #444;
+  background-color: #01181c; }
   .bio .container {
     max-width: 900px;
     margin: 0 auto; }
@@ -290,7 +345,8 @@ div.logo {
       padding: 1.5em;
       background-image: none;
       background-blend-mode: normal; }
-      .buffalo h2, .buffalo p {
+      .buffalo h2,
+      .buffalo p {
         width: 60%;
         float: right;
         clear: right; }
@@ -307,7 +363,8 @@ div.logo {
       padding: 1.5em;
       background-image: none;
       background-blend-mode: normal; }
-      .buffalo h2, .buffalo p {
+      .buffalo h2,
+      .buffalo p {
         width: 50%;
         float: right;
         clear: right; }
@@ -324,7 +381,8 @@ div.logo {
       padding: 3em;
       background-image: none;
       background-blend-mode: normal; }
-      .buffalo h2, .buffalo p {
+      .buffalo h2,
+      .buffalo p {
         width: 50%;
         float: right;
         clear: right;
@@ -426,43 +484,5 @@ div.logo {
         width: 22.5%; }
         .instafeed .four-grid .photo {
           height: 8em; } }
-
-/* Carousel Styles */
-
-#myCarousel .carousel-caption,
-#myCarousel .carousel-caption h2 {
-  top: 50%;
-  transform: translateY(-50%);
-  bottom: 0;
-}
-
-#myCarousel .carousel-caption h2 {
-  color: white;
-  left: 50%;
-  transform: translateX(-50%);
-  position: relative;
-}
-
-#myCarousel .carousel-border {
-  width: 90%;
-  margin-left: 5%;
-  height: 500px;
-  top: 100px;
-  border: 3px solid white;
-  position: absolute;
-  z-index: 5;
-}
-
-@media screen and (max-width: 930px) {
-  #myCarousel .carousel-border {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #myCarousel .carousel-border {
-    height: 170px;
-  }
-}
 
 /*# sourceMappingURL=custom.css.map */
