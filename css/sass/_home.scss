@@ -391,40 +391,6 @@
     }
 }
 
-// .bio {
-//     @include padding($md-sp-unit $lg-sp-unit);
-//     background: #444;
-//     background-color: darken($thirdcolor, 50%);
-//     .container {
-//         max-width: 900px;
-//         @include margin(0 auto);
-//     }
-//     h2 {
-//         @include font(2.5);
-//         @include margin(1em auto 0);
-//         color: white;
-//     }
-//     p {
-//         @include font(1.3);
-//         line-height: 1.4em;
-//         @include margin(1em auto 0);
-//         width: 100%;
-//         color: white;
-//     }
-//     @media screen and (min-width:$screen-4) {
-//         @include padding($lg-sp-unit);
-//         p {
-//             @include margin(1em 2% 0 0);
-//             width: 47.7%;
-//             display: inline-block;
-//             vertical-align: top;
-//             &:nth-of-type(2) {
-//                 @include margin(1em 0 0 2%);
-//             }
-//         }
-//     }
-// }
-
 .buffalo {
     background-color: darken($thirdcolor, 45%);
     background-image: url('../tn-imgs/Mike Frost - IMG_5789.JPG');
@@ -449,7 +415,7 @@
         max-width: 420px;
     }
     p {
-        @include font(1.3);
+        @include font(1.5);
         line-height: 1.4em;
         @include margin(0 0 $sm-sp-unit);
         width: 100%;
