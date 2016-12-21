@@ -461,7 +461,7 @@ footer {
     font-size: 3em;
     line-height: 1.1em;
     margin: 0 auto;
-    text-align: left !important; }
+    text-align: center !important; }
   .chi-town img {
     width: 100%;
     position: relative;
@@ -503,14 +503,17 @@ footer {
   position: relative;
   padding: 1.5em; }
   .buffalo .buffalo-slide {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     width: 100%;
     position: relative;
-    -webkit-transition: height 0.3s 0.1s ease;
-    -moz-transition: height 0.3s 0.1s ease;
-    transition: height 0.3s 0.1s ease;
-    padding: 0; }
+    -webkit-transition: all 0.3s 0.1s ease;
+    -moz-transition: all 0.3s 0.1s ease;
+    transition: all 0.3s 0.1s ease;
+    padding: 0;
+    display: block;
+    background-color: #333;
+    padding: 0 1.5em; }
     .buffalo .buffalo-slide .thumbs {
       width: 98%;
       margin: 0 auto;
@@ -528,10 +531,10 @@ footer {
       position: relative; }
     .buffalo .buffalo-slide.show {
       padding: 3em 1.5em;
-      height: auto;
-      -webkit-transition: height 0.3s 0.1s ease;
-      -moz-transition: height 0.3s 0.1s ease;
-      transition: height 0.3s 0.1s ease; }
+      max-height: 50em;
+      -webkit-transition: all 0.3s 0.1s ease;
+      -moz-transition: all 0.3s 0.1s ease;
+      transition: all 0.3s 0.1s ease; }
     .buffalo .buffalo-slide p {
       width: 100%;
       position: relative;

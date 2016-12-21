@@ -466,14 +466,16 @@
     @include padding($md-sp-unit);
 
     .buffalo-slide {
-    	height:0;
-    	// max-height:0;
+    	// height:0;
+    	max-height:0;
     	overflow: hidden;
     	width:100%;
     	position: relative;
-    	@include transition(height 0.3s 0.1s ease);
+    	@include transition(all 0.3s 0.1s ease);
     	@include padding(0);
-    	
+    	display: block;
+    	background-color:#333;
+    	@include padding(0 $md-sp-unit);
     	.thumbs {
     		width:98%;
     		@include margin(0 auto);
@@ -494,9 +496,9 @@
     	}
     	&.show {
     		@include padding($lg-sp-unit $md-sp-unit);
-    		height:auto;
-    		// max-height: auto;
-    		@include transition(height 0.3s 0.1s ease);
+    		// height:auto;
+    		max-height: 50em;
+    		@include transition(all 0.3s 0.1s ease);
     	}
     	p{
     		width:100%;
