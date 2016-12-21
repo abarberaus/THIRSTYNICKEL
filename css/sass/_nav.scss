@@ -52,7 +52,10 @@
 	}
 }
 
-
+.scheme_original .header_mobile .panel_top, 
+.scheme_original .header_mobile .side_wrap {
+	background-color:#444;
+}
 .header_mobile .side_wrap .close {
 	display:block;
 	z-index:3000;
