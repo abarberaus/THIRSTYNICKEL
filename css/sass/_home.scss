@@ -464,7 +464,47 @@
     overflow: hidden;
     position: relative;
     @include padding($md-sp-unit);
-    img {
+
+    .buffalo-slide {
+    	height:0;
+    	// max-height:0;
+    	overflow: hidden;
+    	width:100%;
+    	position: relative;
+    	@include transition(height 0.3s 0.1s ease);
+    	@include padding(0);
+    	
+    	.thumbs {
+    		width:98%;
+    		@include margin(0 auto);
+    		position: relative;
+    		@media screen and (min-width:$screen-3) {
+    			width:45%;
+    			@include margin(0 2%);
+    			display: inline-block;
+    			// float:left;
+    			vertical-align: top;
+    		}
+    	}
+    	.buffalo-logo {
+    		width:25%; 
+    		float:left;
+    		@include margin(0 $md-sp-unit $sm-sp-unit auto);
+    		position: relative;
+    	}
+    	&.show {
+    		@include padding($lg-sp-unit $md-sp-unit);
+    		height:auto;
+    		// max-height: auto;
+    		@include transition(height 0.3s 0.1s ease);
+    	}
+    	p{
+    		width:100%;
+    		position: relative;
+    		@include margin($md-sp-unit auto);
+    	}
+    }
+    .buffalo-photo {
         display: none;
     }
     h2 {
@@ -507,7 +547,7 @@
             float: right;
             clear: right;
         }
-        img {
+        .buffalo-photo {
             display: block;
             float: left;
             clear: left;
@@ -534,7 +574,7 @@
             float: right;
             clear: right;
         }
-        img {
+        .buffalo-photo {
             display: block;
             float: left;
             clear: left;
@@ -561,7 +601,7 @@
             clear: right;
             max-width: 100%;
         }
-        img {
+        .buffalo-photo {
             display: block;
             float: left;
             clear: left;
@@ -792,6 +832,10 @@
     }
 }
 .sc_events {
+	@include padding($md-sp-unit);
+	h1 {
+		@include margin($lg-sp-unit auto 0);
+	}
 	.sc_button.style_color_light.sc_button_style_filled {
 		@include padding($md-sp-unit);
 		@include margin(1em 0 0);
@@ -956,6 +1000,9 @@
     }
     @media screen and (min-width:$screen-3) and (min-height:600px) {
 		@include padding($lg-sp-unit*5 0);
+		.sc_title.sc_title_style_4 {
+			font-size: 64px;
+		}
 
     }
 }
