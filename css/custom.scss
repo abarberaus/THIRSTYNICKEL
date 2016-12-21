@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @mixin font($em){
-		font-size: ($em*$global) + px;
+		font-size: ($em * $global) + px;
 		font-size: ($em) + em;
+		line-height: 1.1em;
 }
 
 .page_wrap {
