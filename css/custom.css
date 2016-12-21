@@ -119,18 +119,34 @@ h1, h2, h3, h4, h5, h6 {
     height: 70px; }
 
 footer {
-  background: #333;
+  background: #444;
   padding: 1.5em; }
+  footer .footer_wrap_inner {
+    padding: 0; }
+  footer .columns_wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px; }
+  footer .footer-button {
+    width: 100%;
+    margin: 1.5em auto;
+    display: block;
+    padding: 3em;
+    max-width: 400px;
+    font-size: 28px; }
   footer .footer-box {
     width: 45%;
-    margin: 0.5em 2.3%;
+    margin: 0.5em 2.2% 1.5em;
     display: inline-block;
-    vertical-align: top; }
+    overflow: hidden;
+    vertical-align: top;
+    text-align: left; }
     footer .footer-box span {
       color: white;
       text-align: left;
-      font-size: 16px;
-      font-family: 'Tinos', serif;
+      font-size: 18px;
+      font-family: "Langdon", sans-serif;
+      text-transform: uppercase;
       display: block; }
   footer .logo_main {
     width: 100%;
@@ -138,6 +154,28 @@ footer {
     max-width: 150px;
     display: block;
     position: relative; }
+  footer .sc_socials.sc_socials_size_tiny a,
+  footer .sc_socials.sc_socials_size_tiny a .sc_socials_hover {
+    width: 5em;
+    height: 5em; }
+  footer .sc_socials.sc_socials_size_tiny .social_icons span,
+  footer .sc_socials.sc_socials_size_tiny .social_icons.social_gpl span,
+  footer .sc_socials.sc_socials_size_tiny .social_icons.social_tripadvisor span {
+    font-size: 3em; }
+  footer .scheme_original .sc_socials.sc_socials_type_icons a {
+    border-color: #25d7f7;
+    background-color: #222;
+    color: #25d7f7;
+    padding: 20%; }
+    footer .scheme_original .sc_socials.sc_socials_type_icons a:hover {
+      border-color: #fff;
+      background-color: #25d7f7;
+      color: #fff; }
+  footer .copyright_text,
+  footer .copyright_text a {
+    color: #fff !important;
+    font-size: 18px;
+    display: block; }
 
 .contacts .container {
   background: #666; }

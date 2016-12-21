@@ -150,21 +150,39 @@
 
 
 footer {
-	background:#333;
-
+	background:#444;
+	.footer_wrap_inner {
+		@include padding(0);
+	}
 	@include padding($md-sp-unit);
 
+	.columns_wrap {
+		width:100%;
+		@include margin(0 auto);
+		max-width:400px;
+	}
+	.footer-button {
+		width:100%;
+		@include margin($md-sp-unit auto);
+		display: block;
+		@include padding($lg-sp-unit);
+		max-width: 400px;
+		font-size: 28px;
+	}
 	.footer-box {
 		width:45%;
-		@include margin($sm-sp-unit 2.3%);
+		@include margin($sm-sp-unit 2.2% $md-sp-unit);
 		display: inline-block;
+		overflow: hidden;
 		vertical-align: top;
+		text-align:left;
 
 		span {
 			color:white;
 			text-align:left;
-			font-size: 16px;
-			font-family: 'Tinos', serif;
+			font-size: 18px;
+			font-family: $headline-copy;
+			text-transform:uppercase;
 			display: block;
 		}
 	}
@@ -176,6 +194,38 @@ footer {
 		display: block;
 		position: relative;
 		// height:auto;
+	}
+	.sc_socials.sc_socials_size_tiny a, 
+	.sc_socials.sc_socials_size_tiny a .sc_socials_hover {
+		width:5em;
+		height:5em;
+		// font-size:3em;
+
+	}
+	.sc_socials.sc_socials_size_tiny .social_icons span,
+	.sc_socials.sc_socials_size_tiny .social_icons.social_gpl span, 
+	.sc_socials.sc_socials_size_tiny .social_icons.social_tripadvisor span {
+		font-size:3em;
+	}
+
+	.scheme_original .sc_socials.sc_socials_type_icons a {
+		border-color: $thirdcolor;
+		background-color:#222;
+		color:$thirdcolor;
+		@include padding(20%);
+
+		&:hover {
+			border-color: $secondcolor;
+			background-color:$thirdcolor;
+			color:$secondcolor;
+		}
+	}
+
+	.copyright_text,
+	.copyright_text a {
+		color:$secondcolor !important;
+		font-size: 18px;
+		display: block;
 	}
 
 }
