@@ -118,6 +118,27 @@ h1, h2, h3, h4, h5, h6 {
   .top_panel_middle .logo .logo_main {
     height: 70px; }
 
+footer {
+  background: #333;
+  padding: 1.5em; }
+  footer .footer-box {
+    width: 45%;
+    margin: 0.5em 2.3%;
+    display: inline-block;
+    vertical-align: top; }
+    footer .footer-box span {
+      color: white;
+      text-align: left;
+      font-size: 16px;
+      font-family: 'Tinos', serif;
+      display: block; }
+  footer .logo_main {
+    width: 100%;
+    margin: 0.5em auto;
+    max-width: 150px;
+    display: block;
+    position: relative; }
+
 .contacts .container {
   background: #666; }
 
@@ -418,10 +439,6 @@ h1, h2, h3, h4, h5, h6 {
       .chi-town img {
         margin: 1.5em 2%;
         width: 28.1%; } }
-  .chi-town .fade-img {
-    opacity: 0.5;
-    background-color: #25d7f7;
-    background-blend-mode: overlay; }
   .chi-town .left {
     display: none; }
     @media screen and (min-width: 640px) {
@@ -707,7 +724,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5em;
   margin: 0 auto;
   position: relative;
-  max-width: 1020px; }
+  max-width: 1020px;
+  background-color: #333; }
   .instafeed h2 {
     width: 80%;
     text-align: center;

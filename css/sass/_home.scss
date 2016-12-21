@@ -426,12 +426,12 @@
     		width: 28.1%;
     	}
     }
-    .fade-img {
-    	opacity: 0.5;
-    	background-color:$thirdcolor;
-    	background-blend-mode:overlay;
+    // .fade-img {
+    // 	opacity: 0.9;
+    // 	background-color:$thirdcolor;
+    // 	background-blend-mode:overlay;
 
-    }
+    // }
     .left {
     	display: none;
     	@media screen and (min-width:$screen-4) {
@@ -804,6 +804,7 @@
     @include margin(0 auto);
     position: relative;
     max-width: 1020px;
+    background-color:#333;
     h2 {
         width: 80%;
         text-align: center;

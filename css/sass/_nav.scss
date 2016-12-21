@@ -147,6 +147,57 @@
 	}
 }
 
+
+
+footer {
+	background:#333;
+
+	@include padding($md-sp-unit);
+
+	.footer-box {
+		width:45%;
+		@include margin($sm-sp-unit 2.3%);
+		display: inline-block;
+		vertical-align: top;
+
+		span {
+			color:white;
+			text-align:left;
+			font-size: 16px;
+			font-family: 'Tinos', serif;
+			display: block;
+		}
+	}
+
+	.logo_main {
+		width:100%;
+		@include margin($sm-sp-unit auto);
+		max-width: 150px;
+		display: block;
+		position: relative;
+		// height:auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contacts {
 
 	.container {
