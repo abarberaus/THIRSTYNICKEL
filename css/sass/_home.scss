@@ -87,6 +87,7 @@
 }
 .carousel-inner {
     // max-height: 25em;
+
     &:after {
         content: '';
         position: absolute;
@@ -263,6 +264,30 @@
             border: 3px solid white;
         }
     }
+    @media screen and (min-width:$screen-6) and (min-height:600px) {
+        height: 45em;
+        img {
+            max-width: 120% !important;
+        }
+        .carousel-caption {
+            @include font(2.2);
+
+            top: 50%;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            top: 5%;
+            left: 5%;
+            // background:#333;
+            opacity: 1;
+            z-index: 1;
+            border: 3px solid white;
+        }
+    }
+
     @media screen and (min-width:$screen-8) and (min-height:600px) {
         height: 100vh;
         img {
@@ -270,7 +295,7 @@
         }
         .carousel-caption {
             top: 50%;
-            @include font(2.3);
+            @include font(2.2);
 
             // h2 {
             //     font-size: 65px;
@@ -639,6 +664,8 @@
     }
     img {
         display: none;
+        @include margin(0 0 $sm-sp-unit $md-sp-unit);
+
     }
     h2 {
         color: $secondcolor;
@@ -706,13 +733,11 @@
         background-blend-mode:normal;
         h2,
         p {
-            width: 50%;
+            width: 100%;
+            max-width: 100%;
             float: left;
             clear: left;
-            &:nth-of-type(2) {
-                width: 100%;
-                max-width: 100%;
-            }
+
         }
         img {
             display: block;
@@ -738,7 +763,7 @@
             width: 100%;
             float: left;
             clear: left;
-            max-width: 700px;
+            max-width: 100%;
             // @include margin($sm-sp-unit auto);
             // &:nth-of-type(2) {
             //     width: 100%;
@@ -749,9 +774,8 @@
             display: block;
             float: right;
             clear: right;
-            width: 35%;
+            width: 45%;
             max-width: 100%;
-            @include margin(0 0 $sm-sp-unit $sm-sp-unit);
             mix-blend-mode: screen;
         }
         // .sc_button {
@@ -778,15 +802,15 @@
         //         max-width: 100%;
         //     }
         // }
-        // img {
+        img {
         //     display: block;
         //     float: right;
         //     clear: right;
-        //     width: 48%;
+            // width: 50%;
         //     max-width: 100%;
         //     @include margin(0 0 $sm-sp-unit $sm-sp-unit);
         //     mix-blend-mode: screen;
-        // }
+        }
         // .sc_button {
         //     // vertical-align: top;
         //     // clear:right;
