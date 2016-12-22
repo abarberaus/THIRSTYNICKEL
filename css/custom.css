@@ -62,6 +62,67 @@ h1, h2, h3, h4, h5, h6 {
     .top_panel_over .body_wrap .page_wrap .header_mobile .word {
       top: 0.1em; } }
 
+a.call-us {
+  position: absolute;
+  width: 40%;
+  max-width: 120px;
+  color: #fff;
+  font-family: "Langdon", sans-serif;
+  font-size: 22px;
+  line-height: 1.1em;
+  text-align: center;
+  display: block;
+  bottom: 0;
+  left: 5%;
+  top: auto;
+  right: auto;
+  padding: 0.2em;
+  background-color: #25d7f7;
+  border: 3px solid #25d7f7;
+  -webkit-transition: all 0.3s 0.1s ease;
+  -moz-transition: all 0.3s 0.1s ease;
+  transition: all 0.3s 0.1s ease;
+  text-decoration: none; }
+  a.call-us:hover {
+    color: #25d7f7;
+    background-color: transparent; }
+  @media screen and (min-width: 540px) and (orientation: landscape) {
+    a.call-us {
+      top: 0.6em;
+      left: 39%;
+      right: auto;
+      bottom: auto; } }
+  @media screen and (min-width: 640px) and (orientation: landscape) {
+    a.call-us {
+      left: 40%; } }
+  @media screen and (min-width: 720px) and (orientation: landscape) {
+    a.call-us {
+      left: 41%; } }
+  @media screen and (min-width: 750px) and (orientation: landscape) {
+    a.call-us {
+      left: 45%; } }
+  @media screen and (min-width: 540px) and (min-height: 600px) {
+    a.call-us {
+      top: 0.6em;
+      left: 38%;
+      right: auto;
+      bottom: auto; } }
+  @media screen and (min-width: 640px) and (min-height: 600px) {
+    a.call-us {
+      left: 40%; } }
+  @media screen and (min-width: 720px) and (min-height: 600px) {
+    a.call-us {
+      left: 40%; } }
+  @media screen and (min-width: 750px) and (min-height: 600px) {
+    a.call-us {
+      left: 42%; } }
+  @media screen and (min-width: 1023px) {
+    a.call-us {
+      top: 0.6em;
+      left: 43%;
+      right: auto;
+      bottom: auto; } }
+
 .scheme_original .header_mobile .panel_top,
 .scheme_original .header_mobile .side_wrap {
   background-color: #444; }
@@ -75,6 +136,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1em;
   font-weight: bold;
   font-family: sans-serif; }
+
+.header_mobile {
+  height: 8em;
+  -webkit-transition: all 0.1s 0.1s ease;
+  -moz-transition: all 0.1s 0.1s ease;
+  transition: all 0.1s 0.1s ease; }
+  @media screen and (min-width: 540px) and (orientation: landscape) {
+    .header_mobile {
+      height: auto; } }
+  @media screen and (min-width: 540px) and (min-height: 600px) {
+    .header_mobile {
+      height: auto; } }
 
 .header_mobile .side_wrap {
   top: 0; }
@@ -386,6 +459,26 @@ footer {
       opacity: 1;
       z-index: 1;
       border: 3px solid white; } }
+@media screen and (min-width: 750px) and (min-height: 600px) {
+  .item {
+    height: 45em; }
+    .item img {
+      max-width: 120% !important; }
+    .item .carousel-caption {
+      font-size: 1.375px;
+      font-size: 2.2em;
+      line-height: 1.1em;
+      top: 50%; }
+    .item:after {
+      content: '';
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      top: 5%;
+      left: 5%;
+      opacity: 1;
+      z-index: 1;
+      border: 3px solid white; } }
 @media screen and (min-width: 1023px) and (min-height: 600px) {
   .item {
     height: 100vh; }
@@ -393,8 +486,8 @@ footer {
       max-width: 120% !important; }
     .item .carousel-caption {
       top: 50%;
-      font-size: 1.4375px;
-      font-size: 2.3em;
+      font-size: 1.375px;
+      font-size: 2.2em;
       line-height: 1.1em; }
     .item:after {
       content: '';
@@ -697,7 +790,8 @@ footer {
     max-width: 650px;
     margin: 0 auto; }
   .bio img {
-    display: none; }
+    display: none;
+    margin: 0 0 0.5em 1.5em; }
   .bio h2 {
     color: #fff;
     font-size: 45px;
@@ -751,13 +845,10 @@ footer {
       background-blend-mode: normal; }
       .bio h2,
       .bio p {
-        width: 50%;
+        width: 100%;
+        max-width: 100%;
         float: left;
         clear: left; }
-        .bio h2:nth-of-type(2),
-        .bio p:nth-of-type(2) {
-          width: 100%;
-          max-width: 100%; }
       .bio img {
         display: block;
         float: right;
@@ -777,14 +868,13 @@ footer {
         width: 100%;
         float: left;
         clear: left;
-        max-width: 700px; }
+        max-width: 100%; }
       .bio img {
         display: block;
         float: right;
         clear: right;
-        width: 35%;
+        width: 45%;
         max-width: 100%;
-        margin: 0 0 0.5em 0.5em;
         mix-blend-mode: screen; } }
   @media screen and (min-width: 800px) and (min-height: 600px) {
     .bio {
