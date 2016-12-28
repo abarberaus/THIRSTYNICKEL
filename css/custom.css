@@ -928,6 +928,11 @@ footer {
     .sc_events_item_title {
       width: 65% !important; } }
 
+.insta {
+  background-color: #01181C;
+  position: relative;
+  overflow: hidden; }
+
 .instagram {
   padding: 1.5em;
   margin: 1.5em auto 0;

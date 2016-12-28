@@ -817,6 +817,11 @@
         width:65% !important;
     }
 }
+.insta {
+    background-color:$maincolor2;
+    position: relative;
+    overflow: hidden;
+}
 .instagram {
     @include padding($md-sp-unit);
     @include margin($md-sp-unit auto 0);
