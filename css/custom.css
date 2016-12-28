@@ -73,7 +73,7 @@ a.email-us {
   line-height: 1.1em;
   text-align: left;
   display: block;
-  bottom: 0;
+  bottom: 1em;
   left: 4%;
   top: auto;
   right: auto;
@@ -83,38 +83,38 @@ a.email-us {
     color: #25d7f7; }
   @media screen and (min-width: 540px) and (orientation: landscape) {
     a.email-us {
-      top: 1em;
+      top: 1.5em;
       left: 40%;
       right: auto;
       bottom: auto; } }
   @media screen and (min-width: 640px) and (orientation: landscape) {
     a.email-us {
-      left: 42%; } }
+      left: 39%; } }
   @media screen and (min-width: 720px) and (orientation: landscape) {
     a.email-us {
-      left: 43%; } }
+      left: 40%; } }
   @media screen and (min-width: 750px) and (orientation: landscape) {
     a.email-us {
-      left: 45%; } }
+      left: 41%; } }
   @media screen and (min-width: 540px) and (min-height: 600px) {
     a.email-us {
-      top: 1em;
+      top: 1.5em;
       left: 40%;
       right: auto;
       bottom: auto; } }
   @media screen and (min-width: 640px) and (min-height: 600px) {
     a.email-us {
-      left: 42%; } }
+      left: 39%; } }
   @media screen and (min-width: 720px) and (min-height: 600px) {
     a.email-us {
-      left: 43%; } }
+      left: 40%; } }
   @media screen and (min-width: 750px) and (min-height: 600px) {
     a.email-us {
-      left: 45%; } }
+      left: 41%; } }
   @media screen and (min-width: 1023px) {
     a.email-us {
-      top: 1em;
-      left: 45%;
+      top: 1.8em;
+      left: 41%;
       right: auto;
       bottom: auto; } }
 

@@ -62,7 +62,7 @@ a.email-us {
 	line-height:1.1em;
 	text-align:left;
 	display:block;
-	bottom:0;
+	bottom:1em;
 	left:4%;
 	top:auto;
 	right:auto;
@@ -76,41 +76,41 @@ a.email-us {
 
 
 	@media screen and (min-width:$screen-3) and (orientation:landscape) {
-		top:1em;
+		top:1.5em;
 		left:40%;
 		right:auto;
 		bottom:auto;
 	}
 	@media screen and (min-width:$screen-4) and (orientation:landscape) {
-		left:42%;
+		left:39%;
 	}
 	@media screen and (min-width:$screen-5) and (orientation:landscape) {
-		left:43%;
+		left:40%;
 	}
 	@media screen and (min-width:$screen-6) and (orientation:landscape) {
-		left:45%;
+		left:41%;
 	}
 
 
 
 	@media screen and (min-width:$screen-3) and (min-height:600px) {
-		top:1em;
+		top:1.5em;
 		left:40%;
 		right:auto;
 		bottom:auto;
 	}
 	@media screen and (min-width:$screen-4) and (min-height:600px) {
-		left:42%;
+		left:39%;
 	}
 	@media screen and (min-width:$screen-5) and (min-height:600px) {
-		left:43%;
+		left:40%;
 	}
 	@media screen and (min-width:$screen-6) and (min-height:600px) {
-		left:45%;
+		left:41%;
 	}
 	@media screen and (min-width:$screen-8) {
-		top:1em;
-		left:45%;
+		top:1.8em;
+		left:41%;
 		right:auto;
 		bottom:auto;
 	}
