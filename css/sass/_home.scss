@@ -360,7 +360,7 @@
     overflow: hidden;
     width: 100%;
     position: relative;
-    @include padding($lg-sp-unit $md-sp-unit);
+    @include padding($md-sp-unit $md-sp-unit);
     h1 {
         // max-width: 450px;
         font-size: 2.8em;

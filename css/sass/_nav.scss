@@ -130,6 +130,9 @@ a.email-us {
 
 .header_mobile {
 	height:8em;
+	&.contact {
+		height:auto;
+	}
 	@include transition(all 0.1s 0.1s ease);
 	@media screen and (min-width:$screen-3) and (orientation:landscape) {
 		height:auto;
@@ -307,27 +310,3 @@ footer {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contacts {
-
-	.container {
-		background:$maincolor;
-	}
-}

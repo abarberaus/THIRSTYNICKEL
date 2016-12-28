@@ -1,0 +1,97 @@
+
+.contact-us {
+	background-color:$maincolor;
+	.bg_color_1 {
+		background-color: $thirdcolor;
+	}
+
+	.page_content_wrap {
+		@include padding(0);
+	}
+	.hero {
+		height:auto;
+		overflow: hidden;
+		position: relative;
+		&:before {
+	        content: '';
+	        position: absolute;
+	        width: 100%;
+	        height: 100%;
+	        top: 0;
+	        left: 0;
+	        background: $maincolor2;
+	        opacity: 0.4;
+	        z-index: 0;
+	    }
+	}
+
+	.email-us {
+		font-size: 22px;
+		bottom:0 !important;
+		top:auto !important;
+		text-align:center;
+		left:20% !important;
+		width:60% !important;
+		max-width:100% !important;
+
+		@media screen and (min-width:$screen-4) {
+			font-size:35px;
+		}
+	}
+
+
+	.info {
+		background-color:$maincolor2;
+		@include padding($lg-sp-unit);
+	}
+
+	.contact-form {
+		@include padding($lg-sp-unit);
+
+		background-color:$maincolor;
+
+		h1 {
+			color:$secondcolor;
+		}
+
+		input,
+		textarea {
+			border-color: $secondcolor;
+			color:$secondcolor;
+
+			&:active, &:focus, &:hover {
+				border-color: $thirdcolor;
+				color:$secondcolor;
+
+			}
+
+		}
+		.sc_form_button {
+			background-color:$thirdcolor;
+			border:3px solid $thirdcolor;
+			@include transition(all 0.3s 0.1s ease);
+			&:hover {
+				background-color:transparent;
+				color:$thirdcolor;
+			}
+		}
+
+
+
+		::-webkit-input-placeholder {
+           color: $secondcolor;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: $secondcolor;  
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: $secondcolor;  
+        }
+
+        :-ms-input-placeholder {  
+           color: $secondcolor;  
+        }
+	}
+}
