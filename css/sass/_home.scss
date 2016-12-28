@@ -801,6 +801,9 @@
         width:80px;
         bottom:1.1em;
         right:1em;
+        @media screen and (min-width:$screen-7) {
+            right:2em;
+        }
     }
 }
 .sc_events_item_title {

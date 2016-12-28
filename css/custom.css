@@ -916,6 +916,9 @@ footer {
     width: 80px;
     bottom: 1.1em;
     right: 1em; }
+    @media screen and (min-width: 800px) {
+      .sc_events .sc_button.style_color_light.sc_button_style_filled {
+        right: 2em; } }
 
 .sc_events_item_title {
   margin: 0;
