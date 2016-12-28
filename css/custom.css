@@ -529,7 +529,6 @@ footer {
   position: relative;
   padding: 3em 1.5em; }
   .chi-town h1 {
-    max-width: 450px;
     font-size: 2.8em;
     line-height: 1.1em;
     margin: 0 auto;
@@ -549,6 +548,9 @@ footer {
       .chi-town img {
         margin: 1.5em 2%;
         width: 28.1%; } }
+  .chi-town .flag-img {
+    margin: 1.5em auto;
+    display: block; }
   .chi-town .left {
     display: none; }
     @media screen and (min-width: 640px) {
