@@ -76,7 +76,7 @@
 .scheme_original .sc_button.style_color_light.sc_button_style_filled {
     background: $thirdcolor;
     border: 3px solid $thirdcolor;
-    @include padding($md-sp-unit $lg-sp-unit);
+    @include padding($md-sp-unit $md-sp-unit);
     @include transition(background-color 0.3s 0.1s ease, color 0.3s 0.1s ease);
     &:hover {
         background: transparent;

@@ -321,7 +321,7 @@ footer {
 .scheme_original .sc_button.style_color_light.sc_button_style_filled {
   background: #25d7f7;
   border: 3px solid #25d7f7;
-  padding: 1.5em 3em;
+  padding: 1.5em;
   -webkit-transition: background-color 0.3s 0.1s ease, color 0.3s 0.1s ease;
   -moz-transition: background-color 0.3s 0.1s ease, color 0.3s 0.1s ease;
   transition: background-color 0.3s 0.1s ease, color 0.3s 0.1s ease; }
