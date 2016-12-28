@@ -1,5 +1,5 @@
 .scheme_original .body_style_boxed .body_wrap {
-    background-color: #333;
+    background-color: $maincolor;
 }
 
 .bg_image_13 {
@@ -7,7 +7,7 @@
     background-image: none !important;
     background-size: cover;
     background-position: center;
-    background-color: #333;
+    background-color: $maincolor;
 }
 
 .bg_image_12,
@@ -29,12 +29,12 @@
 
 .bg_image_14,
 .bg_image_17 {
-    background: #555;
+    background: $maincolor;
 }
 
 .bg_image_15,
 .bg_image_16 {
-    background: #333;
+    background: $maincolor;
 }
 
 .tn-border,
@@ -62,7 +62,7 @@
 .scheme_original input[type="password"]:hover,
 .scheme_original select:hover,
 .scheme_original textarea:hover {
-    border-color: #555;
+    border-color: $maincolor;
 }
 
 .sc_services_item_description {
@@ -95,7 +95,7 @@
         height: 90%;
         top: 5%;
         left: 5%;
-        // background:#333;
+        // background:$maincolor;
         background-image: url('../tn-imgs/thirstynickel logo white.png');
         background-repeat: no-repeat;
         background-size: 25%;
@@ -179,7 +179,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: #333;
+        background: $maincolor;
         opacity: 0.6;
         z-index: 0;
     }
@@ -235,7 +235,7 @@
     //         height: 85%;
     //         top: 10%;
     //         left: 5%;
-    //         // background:#333;
+    //         // background:$maincolor;
     //         opacity: 1;
     //         z-index: 1;
     //         border: 3px solid white;
@@ -258,7 +258,7 @@
             height: 90%;
             top: 5%;
             left: 5%;
-            // background:#333;
+            // background:$maincolor;
             opacity: 1;
             z-index: 1;
             border: 3px solid white;
@@ -281,7 +281,7 @@
             height: 90%;
             top: 5%;
             left: 5%;
-            // background:#333;
+            // background:$maincolor;
             opacity: 1;
             z-index: 1;
             border: 3px solid white;
@@ -314,7 +314,7 @@
             height: 85%;
             top: 10%;
             left: 5%;
-            // background:#333;
+            // background:$maincolor;
             opacity: 1;
             z-index: 1;
             border: 3px solid white;
@@ -340,7 +340,7 @@
 
 .happy-hour {
     @include padding($md-sp-unit);
-    background-color: #222;
+    background-color: $maincolor2;
     h1 {
         color: lighten($thirdcolor, 10%);
     }
@@ -356,15 +356,9 @@
 }
 
 .chi-town {
-    background: #444;
-    // background-image: url('../tn-imgs/chicago_shirt.png');
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // background-position: center center;
+    background: $maincolor;
     overflow: hidden;
     width: 100%;
-    // height: 20em;
-    // max-height:20em;
     position: relative;
     @include padding($lg-sp-unit $md-sp-unit);
     h1 {
@@ -390,11 +384,6 @@
             width: 28.1%;
         }
     }
-    // .fade-img {
-    // 	opacity: 0.9;
-    // 	background-color:$thirdcolor;
-    // 	background-blend-mode:overlay;
-    // }
     .left {
         display: none;
         @media screen and (min-width: $screen-4) {
@@ -415,19 +404,17 @@
 }
 
 .buffalo {
-    background-color: darken($thirdcolor, 45%);
+    background-color: $maincolor2;
     background-image: url('../tn-imgs/Mike Frost - IMG_5789.JPG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
     width: 100%;
-    // height:30em;
     overflow: hidden;
     position: relative;
     @include padding($md-sp-unit);
     .buffalo-slide {
-        // height:0;
         max-height: 0;
         overflow: hidden;
         width: 100%;
@@ -435,7 +422,7 @@
         @include transition(all 0.3s 0.1s ease);
         @include padding(0);
         display: block;
-        background-color: #444;
+        background-color: $maincolor;
         @include padding(0 $md-sp-unit);
         @include margin(0 auto);
 
@@ -446,7 +433,6 @@
 	        height: 95%;
 	        top: 2.5%;
 	        left: 2.5%;
-	        // background:#333;
 	        opacity: 1;
 	        z-index: 1;
 	        border: 3px solid white;
@@ -469,7 +455,6 @@
                 width: 45%;
                 @include margin($md-sp-unit 2%);
                 display: inline-block;
-                // float:left;
                 vertical-align: top;
             }
             @media screen and (min-width: $screen-3) and (min-height:600px) {
@@ -564,8 +549,7 @@
         }
         @include padding($md-sp-unit);
         background-image:none;
-        background-color: darken($thirdcolor,
-        50%);
+        background-color:$maincolor2;
         background-blend-mode:normal;
         h2,
         p {
@@ -617,7 +601,7 @@
     @media screen and (min-width:$screen-5) and (min-height:600px) {
         @include padding($lg-sp-unit);
         background-image: none;
-        background-color: darken($thirdcolor, 50%);
+        background-color: $maincolor2;
         background-blend-mode: normal;
         h2,
         p {
@@ -698,8 +682,7 @@
         }
         @include padding($md-sp-unit);
         background-image:none;
-        background-color: darken($thirdcolor,
-        50%);
+        background-color: $maincolor;
         background-blend-mode:normal;
         h2,
         p {
@@ -707,10 +690,7 @@
             max-width: 100%;
             float: left;
             clear: left;
-            // &:nth-of-type(2) {
-            //     width: 100%;
-            //     max-width: 100%;
-            // }
+
         }
         img {
             display: block;
@@ -719,9 +699,6 @@
             width: 38%;
         }
         .sc_button {
-            // vertical-align: top;
-            // clear:left;
-            // float:right;
             @include margin(2em 0 0);
             width: 38%;
         }
@@ -746,9 +723,6 @@
             width: 48%;
         }
         .sc_button {
-            // vertical-align: top;
-            // clear:left;
-            // float:right;
             @include margin(2em 0 0);
             width: 48%;
         }
@@ -756,7 +730,7 @@
     @media screen and (min-width:$screen-5) and (min-height:600px) {
         @include padding($lg-sp-unit);
         background-image: none;
-        background-color: darken($thirdcolor, 50%);
+        background-color: $maincolor;
         background-blend-mode: normal;
         h2,
         p {
@@ -764,11 +738,7 @@
             float: left;
             clear: left;
             max-width: 100%;
-            // @include margin($sm-sp-unit auto);
-            // &:nth-of-type(2) {
-            //     width: 100%;
-            //     max-width: 100%;
-            // }
+  
         }
         img {
             display: block;
@@ -776,78 +746,21 @@
             clear: right;
             width: 45%;
             max-width: 100%;
-            mix-blend-mode: screen;
+            opacity: 0.8;
+            // mix-blend-mode: screen;
         }
-        // .sc_button {
-        //     // vertical-align: top;
-        //     // clear:right;
-        //     // float:left;
-        //     @include margin(1em 0 0);
-        //     max-width: 100%;
-        //     width: 48%;
-        // }
+
     }
     @media screen and (min-width:$screen-7) and (min-height:600px) {
         @include padding($lg-sp-unit);
         background-image: none;
         background-blend-mode: normal;
-        // h2,
-        // p {
-        //     width: 50%;
-        //     float: left;
-        //     clear: left;
-        //     max-width: 100%;
-        //     &:nth-of-type(2) {
-        //         width: 50%;
-        //         max-width: 100%;
-        //     }
-        // }
-        img {
-        //     display: block;
-        //     float: right;
-        //     clear: right;
-            // width: 50%;
-        //     max-width: 100%;
-        //     @include margin(0 0 $sm-sp-unit $sm-sp-unit);
-        //     mix-blend-mode: screen;
-        }
-        // .sc_button {
-        //     // vertical-align: top;
-        //     // clear:right;
-        //     // float:left;
-        //     @include margin(1em 0 0);
-        //     max-width: 100%;
-        //     width: 48%;
-        // }
     }
     @media screen and (min-width:$screen-9) and (min-height:600px) {
         @include padding($lg-sp-unit);
         background-image: none;
         background-blend-mode: normal;
-        // h2,
-        // p {
-        //     width: 50%;
-        //     float: left;
-        //     clear: left;
-        //     max-width: 100%;
-        //     &:nth-of-type(2) {
-        //         width: 100%;
-        //         max-width: 100%;
-        //     }
-        // }
-        // img {
-        //     display: block;
-        //     float: right;
-        //     clear: right;
-        //     width: 48%;
-        //     // max-width: 330px;
-        //     @include margin(0 0 $sm-sp-unit $sm-sp-unit);
-        //     mix-blend-mode: screen;
-        // }
         .sc_button {
-            // vertical-align: top;
-            // clear:right;
-            // float:left;
             @include margin(1em 0 0);
             max-width: 100%;
             width: 48%;
@@ -857,11 +770,24 @@
 
 .sc_events {
     @include padding($sm-sp-unit 0);
+    background-color:$maincolor;
     h1 {
         @include margin($lg-sp-unit auto 0);
     }
     .sc_events_item_title a {
         letter-spacing: 2px;
+    }
+    .sc_events_item {
+        background-color:$maincolor2;
+    }
+    .sc_events_item_time {
+        font-size: 16px;
+        font-family: $headline-copy;
+        text-transform: uppercase;
+        width:15%;
+        @media screen and (max-width:$screen-3) {
+            display: none !important;
+        }
     }
     .sc_events_item_day {
         font-family: $headline-copy !important;
@@ -873,35 +799,23 @@
         position: absolute;
         height:40px;
         width:80px;
-        // top:0;
         bottom:1.1em;
         right:1em;
-        // @include margin(1em 0 0);
-        // // width:90%;
-        // @media screen and (min-width:$screen-3) and (orientation:landscape) {
-        //     @include margin(1em 25% 0);
-        // }
-        // @media screen and (min-width:$screen-4) and (orientation:landscape) {
-        //     @include margin(1em 0 0);
-        // }
     }
 }
-.sc_events_style_events-2 .sc_events_item_title {
+.sc_events_item_title {
     @include margin(0);
     width:70% !important;
     @media screen and (min-width:$screen-3) and (orientation:landscape) {
         width:65% !important;
     }
-    // @media screen and (min-width:$screen-4) and (orientation:landscape) {
-    //     width:59%;
-    // }
 }
 .instafeed {
     @include padding($md-sp-unit);
     @include margin(0 auto);
     position: relative;
     max-width: 1020px;
-    background-color: #333;
+    background-color: $maincolor;
     h2 {
         width: 80%;
         text-align: center;
@@ -1006,8 +920,24 @@
         font-size: 45px;
         @include margin(0 auto);
     }
-    .sc_button.sc_button_style_filled.style_color_light {
-        @include padding(1.7em $lg-sp-unit);
+    // .sc_button.sc_button_style_filled.style_color_light {
+    //     @include padding(1.7em $lg-sp-unit);
+    // }
+    .sc_button {
+        @include margin($md-sp-unit 0);
+        @include padding($md-sp-unit);
+        width: 100%;
+        max-width: 420px;
+        @include font(1.5);
+        border:3px solid $thirdcolor;
+        background-color:$thirdcolor;
+        color:$secondcolor;
+        @include transition(all 0.3s 0.1s ease);
+        text-decoration: none;
+        &:hover {
+            color:$thirdcolor;
+            background:transparent;
+        }
     }
     &:after {
         content: '';
@@ -1016,7 +946,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        // background:#333;
+        // background:$maincolor;
         background-image: url('../tn-imgs/female_artist_stage.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -1032,7 +962,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: #333;
+        background: $maincolor;
         // background-image: url('../tn-imgs/female_artist_stage.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;

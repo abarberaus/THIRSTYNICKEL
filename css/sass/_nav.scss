@@ -117,7 +117,7 @@ a.email-us {
 }
 .scheme_original .header_mobile .panel_top, 
 .scheme_original .header_mobile .side_wrap {
-	background-color:#444;
+	background-color:$maincolor;
 }
 .header_mobile .side_wrap .close {
 	display:block;
@@ -162,7 +162,7 @@ a.email-us {
 }
 @media (max-width: 1030px) {
 	.top_panel_over .body_wrap .page_wrap .header_mobile {
-	    background: #393939;
+	    background: $maincolor2;
 	    position: relative;
 	}
 }
@@ -225,7 +225,7 @@ a.email-us {
 
 
 footer {
-	background:#444;
+	background:$maincolor2;
 	.footer_wrap_inner {
 		@include padding(0);
 	}
@@ -251,7 +251,9 @@ footer {
 		overflow: hidden;
 		vertical-align: top;
 		text-align:left;
-
+		h2 {
+			color:$secondcolor;
+		}
 		span {
 			color:white;
 			text-align:left;
@@ -285,7 +287,7 @@ footer {
 
 	.scheme_original .sc_socials.sc_socials_type_icons a {
 		border-color: $thirdcolor;
-		background-color:#222;
+		background-color:$maincolor;
 		color:$thirdcolor;
 		@include padding(20%);
 
@@ -326,6 +328,6 @@ footer {
 .contacts {
 
 	.container {
-		background:#666;
+		background:$maincolor;
 	}
 }

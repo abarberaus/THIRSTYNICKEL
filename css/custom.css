@@ -158,7 +158,7 @@ a.email-us {
 
 @media (max-width: 1030px) {
   .top_panel_over .body_wrap .page_wrap .header_mobile {
-    background: #393939;
+    background: #01181C;
     position: relative; } }
 @media screen and (max-width: 639px) {
   .header_mobile .logo_main {
@@ -193,7 +193,7 @@ a.email-us {
     height: 70px; }
 
 footer {
-  background: #444;
+  background: #01181C;
   padding: 1.5em; }
   footer .footer_wrap_inner {
     padding: 0; }
@@ -215,6 +215,8 @@ footer {
     overflow: hidden;
     vertical-align: top;
     text-align: left; }
+    footer .footer-box h2 {
+      color: #fff; }
     footer .footer-box span {
       color: white;
       text-align: left;
@@ -238,7 +240,7 @@ footer {
     font-size: 3em; }
   footer .scheme_original .sc_socials.sc_socials_type_icons a {
     border-color: #25d7f7;
-    background-color: #222;
+    background-color: #444;
     color: #25d7f7;
     padding: 20%; }
     footer .scheme_original .sc_socials.sc_socials_type_icons a:hover {
@@ -252,16 +254,16 @@ footer {
     display: block; }
 
 .contacts .container {
-  background: #666; }
+  background: #444; }
 
 .scheme_original .body_style_boxed .body_wrap {
-  background-color: #333; }
+  background-color: #444; }
 
 .bg_image_13 {
   background-image: none !important;
   background-size: cover;
   background-position: center;
-  background-color: #333; }
+  background-color: #444; }
 
 .bg_image_12,
 .bg_image_14,
@@ -279,11 +281,11 @@ footer {
 
 .bg_image_14,
 .bg_image_17 {
-  background: #555; }
+  background: #444; }
 
 .bg_image_15,
 .bg_image_16 {
-  background: #333; }
+  background: #444; }
 
 .tn-border,
 .top_panel_over .header_style_6 .slider_wrap .slotholder:after,
@@ -309,7 +311,7 @@ footer {
 .scheme_original input[type="password"]:hover,
 .scheme_original select:hover,
 .scheme_original textarea:hover {
-  border-color: #555; }
+  border-color: #444; }
 
 .sc_services_item_description {
   color: white; }
@@ -397,7 +399,7 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  background: #333;
+  background: #444;
   opacity: 0.6;
   z-index: 0; }
 .item:after {
@@ -509,7 +511,7 @@ footer {
 
 .happy-hour {
   padding: 1.5em;
-  background-color: #222; }
+  background-color: #01181C; }
   .happy-hour h1 {
     color: #56e0f9; }
   .happy-hour .sc_title.sc_title_style_3 {
@@ -562,7 +564,7 @@ footer {
     width: 49%; } }
 
 .buffalo {
-  background-color: #022d35;
+  background-color: #01181C;
   background-image: url("../tn-imgs/Mike Frost - IMG_5789.JPG");
   background-position: center;
   background-repeat: no-repeat;
@@ -712,7 +714,7 @@ footer {
     .buffalo {
       padding: 1.5em;
       background-image: none;
-      background-color: #01181c;
+      background-color: #01181C;
       background-blend-mode: normal; }
       .buffalo h2,
       .buffalo p {
@@ -749,7 +751,7 @@ footer {
     .buffalo {
       padding: 3em;
       background-image: none;
-      background-color: #01181c;
+      background-color: #01181C;
       background-blend-mode: normal; }
       .buffalo h2,
       .buffalo p {
@@ -817,7 +819,7 @@ footer {
     .bio {
       padding: 1.5em;
       background-image: none;
-      background-color: #01181c;
+      background-color: #444;
       background-blend-mode: normal; }
       .bio h2,
       .bio p {
@@ -856,7 +858,7 @@ footer {
     .bio {
       padding: 3em;
       background-image: none;
-      background-color: #01181c;
+      background-color: #444;
       background-blend-mode: normal; }
       .bio h2,
       .bio p {
@@ -870,7 +872,7 @@ footer {
         clear: right;
         width: 45%;
         max-width: 100%;
-        mix-blend-mode: screen; } }
+        opacity: 0.8; } }
   @media screen and (min-width: 800px) and (min-height: 600px) {
     .bio {
       padding: 3em;
@@ -887,11 +889,22 @@ footer {
         width: 48%; } }
 
 .sc_events {
-  padding: 0.5em 0; }
+  padding: 0.5em 0;
+  background-color: #444; }
   .sc_events h1 {
     margin: 3em auto 0; }
   .sc_events .sc_events_item_title a {
     letter-spacing: 2px; }
+  .sc_events .sc_events_item {
+    background-color: #01181C; }
+  .sc_events .sc_events_item_time {
+    font-size: 16px;
+    font-family: "Langdon", sans-serif;
+    text-transform: uppercase;
+    width: 15%; }
+    @media screen and (max-width: 540px) {
+      .sc_events .sc_events_item_time {
+        display: none !important; } }
   .sc_events .sc_events_item_day {
     font-family: "Langdon", sans-serif !important;
     padding: 10% 0 0;
@@ -904,11 +917,11 @@ footer {
     bottom: 1.1em;
     right: 1em; }
 
-.sc_events_style_events-2 .sc_events_item_title {
+.sc_events_item_title {
   margin: 0;
   width: 70% !important; }
   @media screen and (min-width: 540px) and (orientation: landscape) {
-    .sc_events_style_events-2 .sc_events_item_title {
+    .sc_events_item_title {
       width: 65% !important; } }
 
 .instafeed {
@@ -916,7 +929,7 @@ footer {
   margin: 0 auto;
   position: relative;
   max-width: 1020px;
-  background-color: #333; }
+  background-color: #444; }
   .instafeed h2 {
     width: 80%;
     text-align: center;
@@ -1008,8 +1021,24 @@ footer {
   .booking .sc_title.sc_title_style_4 {
     font-size: 45px;
     margin: 0 auto; }
-  .booking .sc_button.sc_button_style_filled.style_color_light {
-    padding: 1.7em 3em; }
+  .booking .sc_button {
+    margin: 1.5em 0;
+    padding: 1.5em;
+    width: 100%;
+    max-width: 420px;
+    font-size: 0.9375px;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    border: 3px solid #25d7f7;
+    background-color: #25d7f7;
+    color: #fff;
+    -webkit-transition: all 0.3s 0.1s ease;
+    -moz-transition: all 0.3s 0.1s ease;
+    transition: all 0.3s 0.1s ease;
+    text-decoration: none; }
+    .booking .sc_button:hover {
+      color: #25d7f7;
+      background: transparent; }
   .booking:after {
     content: '';
     position: absolute;
@@ -1030,7 +1059,7 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    background: #333;
+    background: #444;
     opacity: 0.4;
     z-index: 0; }
   @media screen and (min-width: 540px) and (orientation: landscape) {
