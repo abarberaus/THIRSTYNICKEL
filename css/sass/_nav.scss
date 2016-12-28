@@ -54,13 +54,10 @@
 a.email-us {
 	position: absolute;
 	width:60%;
-	// max-width:220px;
+	max-width:300px;
 	color:$secondcolor;
-	// font-family:'Tinos', serif;
 	font-family:$headline-copy;
-	font-family: "Tinos",serif;
-	font-weight:700;
-	// @include font(1.7);
+	text-transform:uppercase;
 	font-size:15px;
 	line-height:1.1em;
 	text-align:left;
@@ -70,15 +67,13 @@ a.email-us {
 	top:auto;
 	right:auto;
 	@include padding(0.2em 0);
-	// background-color:$thirdcolor;
-	// border:3px solid $thirdcolor;
-	// @include transition(all 0.3s 0.1s ease);
 	text-decoration:none;
 
-	// &:hover {
-	// 	color:$thirdcolor;
-	// 	background-color:transparent;
-	// }
+	&:hover {
+		color:$thirdcolor;
+		// background-color:transparent;
+	}
+
 
 	@media screen and (min-width:$screen-3) and (orientation:landscape) {
 		top:1em;

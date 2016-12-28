@@ -65,10 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 a.email-us {
   position: absolute;
   width: 60%;
+  max-width: 300px;
   color: #fff;
   font-family: "Langdon", sans-serif;
-  font-family: "Tinos",serif;
-  font-weight: 700;
+  text-transform: uppercase;
   font-size: 15px;
   line-height: 1.1em;
   text-align: left;
@@ -79,6 +79,8 @@ a.email-us {
   right: auto;
   padding: 0.2em 0;
   text-decoration: none; }
+  a.email-us:hover {
+    color: #25d7f7; }
   @media screen and (min-width: 540px) and (orientation: landscape) {
     a.email-us {
       top: 1em;
@@ -899,12 +901,15 @@ footer {
     position: absolute;
     height: 40px;
     width: 80px;
-    top: -2.4em;
+    bottom: 1.1em;
     right: 1em; }
 
 .sc_events_style_events-2 .sc_events_item_title {
   margin: 0;
   width: 70% !important; }
+  @media screen and (min-width: 540px) and (orientation: landscape) {
+    .sc_events_style_events-2 .sc_events_item_title {
+      width: 65% !important; } }
 
 .instafeed {
   padding: 1.5em;

@@ -873,8 +873,8 @@
         position: absolute;
         height:40px;
         width:80px;
-        top:-2.4em;
-        // bottom:0.1em;
+        // top:0;
+        bottom:1.1em;
         right:1em;
         // @include margin(1em 0 0);
         // // width:90%;
@@ -889,9 +889,9 @@
 .sc_events_style_events-2 .sc_events_item_title {
     @include margin(0);
     width:70% !important;
-    // @media screen and (min-width:$screen-3) and (orientation:landscape) {
-    //     width:60%;
-    // }
+    @media screen and (min-width:$screen-3) and (orientation:landscape) {
+        width:65% !important;
+    }
     // @media screen and (min-width:$screen-4) and (orientation:landscape) {
     //     width:59%;
     // }
