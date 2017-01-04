@@ -1021,6 +1021,38 @@ footer {
       .booking .sc_title.sc_title_style_4 {
         font-size: 64px; } }
 
+section.drink-menu {
+  background-color: #444;
+  position: relative;
+  overflow: hidden;
+  padding: 1em;
+  width: 100%;
+  margin: 0 auto; }
+  section.drink-menu .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li.ui-state-active a,
+  section.drink-menu .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li a:hover {
+    background-color: #25d7f7; }
+  section.drink-menu .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li a:before {
+    border-top-color: #25d7f7;
+    bottom: -0.65em; }
+  section.drink-menu .sc_tabs .sc_tabs_titles li {
+    font-size: 1.5em;
+    width: 45%;
+    margin: 2em 2% 0;
+    text-align: center;
+    position: relative;
+    font-family: "langdon", sans-serif; }
+  section.drink-menu h1 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin: 1em auto 0.5em;
+    clear: both; }
+  section.drink-menu .sc_tabs_titles {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 300px;
+    position: relative; }
+
 .contact-us {
   background-color: #444; }
   .contact-us .bg_color_1 {
