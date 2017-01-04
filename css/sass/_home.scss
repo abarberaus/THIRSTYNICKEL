@@ -926,3 +926,63 @@
         }
     }
 }
+
+
+    section.drink-menu {
+        background-color:$maincolor;
+        position: relative;
+        overflow:hidden;
+        padding:1em;
+        width:100%;
+        margin:0 auto;
+        .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li.ui-state-active a,
+        .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li a:hover {
+            background-color:$thirdcolor;
+        }
+        .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li a:before {
+            border-top-color:$thirdcolor;
+            bottom:-0.65em;
+        }
+
+        .sc_tabs .sc_tabs_titles li {
+            font-size:1.5em;
+            // line-height: 1em;
+            width:45%;
+            margin:2em 2% 0;
+            text-align:center;
+            // padding:0.5em;
+            position: relative;
+            font-family: "langdon", sans-serif;
+        }
+
+        h1 {
+            color:$secondcolor;
+            text-align:center;
+            position: relative;
+            margin:1em auto 0.5em;
+            clear:both;
+        }
+
+        .sc_tabs_titles {
+            width:70%;
+            margin:0 auto;
+            max-width: 300px;
+            position: relative;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
