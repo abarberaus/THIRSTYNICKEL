@@ -4,6 +4,10 @@ $('#modal-trigger').on('click', function(e) {
       $('.buffalo-slide').toggleClass("show"); //you can list several class names 
       e.preventDefault();
     });
+
+
+
+
 });
 
 

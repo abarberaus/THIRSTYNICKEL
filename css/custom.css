@@ -1030,7 +1030,8 @@ footer {
   .contact-us .hero {
     height: auto;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    z-index: 2; }
     .contact-us .hero:before {
       content: '';
       position: absolute;
@@ -1040,7 +1041,34 @@ footer {
       left: 0;
       background: #01181C;
       opacity: 0.4;
-      z-index: 0; }
+      z-index: 1; }
+    .contact-us .hero .video-fallback {
+      z-index: 0;
+      position: relative; }
+      @media screen and (min-width: 750px) {
+        .contact-us .hero .video-fallback {
+          z-index: -20; } }
+    .contact-us .hero .video-background {
+      background: #000;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1; }
+    .contact-us .hero .video-foreground,
+    .contact-us .hero .video-background iframe {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; }
+      @media screen and (min-width: 750px) {
+        .contact-us .hero .video-foreground,
+        .contact-us .hero .video-background iframe {
+          display: block; } }
   .contact-us .email-us {
     font-size: 22px;
     bottom: 0 !important;
@@ -1048,7 +1076,8 @@ footer {
     text-align: center;
     left: 20% !important;
     width: 60% !important;
-    max-width: 100% !important; }
+    max-width: 100% !important;
+    z-index: 200; }
     @media screen and (min-width: 640px) {
       .contact-us .email-us {
         font-size: 35px; } }
