@@ -937,6 +937,8 @@
         margin:0 auto;
         color:$secondcolor;
         z-index: 1;
+        @include font(1);
+
         &:after {
             content: '';
             position: absolute;
@@ -949,6 +951,9 @@
             // border: 3px solid white;
         }
 
+        @media screen and (min-width:$fullwidth) {
+            @include font(0.7);
+        }
         .container {
             max-width:900px;
             margin:0 auto;
