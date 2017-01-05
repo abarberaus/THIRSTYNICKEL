@@ -587,7 +587,8 @@ footer {
     display: block;
     background-color: #444;
     padding: 0 1.5em;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 1; }
     .buffalo .buffalo-slide:after {
       content: '';
       position: absolute;
@@ -596,8 +597,26 @@ footer {
       top: 2.5%;
       left: 2.5%;
       opacity: 1;
-      z-index: 1;
+      z-index: -1;
       border: 3px solid white; }
+    .buffalo .buffalo-slide .book-now {
+      margin: 0 auto;
+      display: block;
+      background-color: #7b1216;
+      border-color: #7b1216;
+      -webkit-transition: all 0.3s 0.2s ease;
+      -moz-transition: all 0.3s 0.2s ease;
+      transition: all 0.3s 0.2s ease;
+      font-size: 0.625px;
+      font-size: 1em;
+      line-height: 1.1em;
+      max-width: 300px;
+      width: 100%;
+      padding: 1.5em; }
+      .buffalo .buffalo-slide .book-now:hover {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff; }
     .buffalo .buffalo-slide .thumbs {
       width: 98%;
       overflow: hidden;
@@ -638,11 +657,10 @@ footer {
       position: relative; }
     .buffalo .buffalo-slide p {
       width: 95%;
-      min-height: 10em;
       float: none;
       clear: both;
       position: relative;
-      max-width: 100%;
+      max-width: 600px;
       opacity: 0;
       margin: 0.5em auto;
       -webkit-transform: translateX(-100%);
@@ -653,6 +671,8 @@ footer {
       -webkit-transition: all 0.5s 0.8s ease;
       -moz-transition: all 0.5s 0.8s ease;
       transition: all 0.5s 0.8s ease; }
+      .buffalo .buffalo-slide p.normal {
+        min-height: auto; }
       @media screen and (min-width: 540px) and (orientation: landscape) {
         .buffalo .buffalo-slide p {
           margin: 1.5em auto; } }

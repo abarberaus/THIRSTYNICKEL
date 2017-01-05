@@ -429,6 +429,7 @@
         background-color: $maincolor;
         @include padding(0 $md-sp-unit);
         @include margin(0 auto);
+        z-index: 1;
 
         &:after {
 	        content: '';
@@ -438,9 +439,30 @@
 	        top: 2.5%;
 	        left: 2.5%;
 	        opacity: 1;
-	        z-index: 1;
+	        z-index: -1;
 	        border: 3px solid white;
 	    }
+
+        .book-now {
+            @include margin(0 auto);
+            display: block;
+            background-color:#7b1216;
+            border-color:#7b1216;
+            @include transition(all 0.3s 0.2s ease);
+            @include font(1);
+            max-width: 300px;
+            width:100%;
+            @include padding($md-sp-unit);
+
+            &:hover {
+                background-color:transparent;
+                border-color:$secondcolor;
+                color:$secondcolor;
+            }
+
+        }
+
+
         .thumbs {
             width: 98%;
             overflow: hidden;
@@ -478,16 +500,21 @@
         }
         p {
             width: 95%;
-            min-height: 10em;
+            // min-height: 10em;
             float: none;
             clear: both;
             // font-size: 18px;
             position: relative;
-            max-width: 100%;
+            max-width: 600px;
             opacity: 0;
             @include margin($sm-sp-unit auto);
             @include transform(translateX(-100%));
             @include transition(all 0.5s 0.8s ease);
+
+            &.normal {
+                min-height:auto;
+
+            }
 
             @media screen and (min-width: $screen-3) and (orientation:landscape) {
             	@include margin($md-sp-unit auto);
