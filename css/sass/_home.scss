@@ -447,12 +447,13 @@
             @include margin(0 auto);
             display: block;
             background-color:#7b1216;
-            border-color:#7b1216;
+            border:3px solid #7b1216;
             @include transition(all 0.3s 0.2s ease);
-            @include font(1);
-            max-width: 300px;
+            @include font(0.7);
+            max-width: 150px;
             width:100%;
-            @include padding($md-sp-unit);
+            // border:3px white solid;
+            @include padding($md-sp-unit*.5);
 
             &:hover {
                 background-color:transparent;
@@ -506,6 +507,7 @@
             // font-size: 18px;
             position: relative;
             max-width: 600px;
+            max-width: 100%;
             opacity: 0;
             @include margin($sm-sp-unit auto);
             @include transform(translateX(-100%));
