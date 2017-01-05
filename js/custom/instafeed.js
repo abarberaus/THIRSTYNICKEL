@@ -5,6 +5,18 @@ $('#modal-trigger').on('click', function(e) {
       e.preventDefault();
     });
 
+	$('.tabs').on('click', function(e) {
+      $('#winter_menu').toggleClass("show"); //you can list several class names 
+      $('#winter_menu_2').toggleClass("show"); //you can list several class names
+      $('#coffee_menu').toggleClass("show"); //you can list several class names 
+      $('#coffee_menu_2').toggleClass("show");  
+      $('#winter_is_coming').toggleClass("active"); //you can list several class names 
+      $('#coffee').toggleClass("active"); //you can list several class names 
+      e.preventDefault();
+    });
+
+
+
 
 
 

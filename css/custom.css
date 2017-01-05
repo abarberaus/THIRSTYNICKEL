@@ -1025,9 +1025,10 @@ section.drink-menu {
   background-color: #01181C;
   position: relative;
   overflow: hidden;
-  padding: 1em;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #fff;
+  z-index: 1; }
   section.drink-menu:after {
     content: '';
     position: absolute;
@@ -1036,41 +1037,210 @@ section.drink-menu {
     top: 5%;
     left: 5%;
     opacity: 1;
-    z-index: 1;
-    border: 3px solid white; }
+    z-index: -1; }
   section.drink-menu .container {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 1em 1em 2em; }
-    @media screen and (min-width: 680px) {
-      section.drink-menu .container {
-        padding: 2em 3em 2em; } }
-  section.drink-menu .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li.ui-state-active a,
-  section.drink-menu .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li a:hover {
-    background-color: #25d7f7; }
-  section.drink-menu .sc_tabs.sc_tabs_style_1 .sc_tabs_titles li a:before {
-    border-top-color: #25d7f7;
-    bottom: -0.65em; }
-  section.drink-menu .sc_tabs .sc_tabs_titles li {
-    font-size: 1.5em;
-    width: 45%;
-    margin: 2em 2% 0;
-    text-align: center;
+    width: 100%;
     position: relative;
-    font-family: "langdon", sans-serif; }
-    section.drink-menu .sc_tabs .sc_tabs_titles li a {
-      z-index: 1000; }
+    overflow: hidden;
+    padding: 1em 0 2em; }
   section.drink-menu h1 {
     color: #fff;
     text-align: center;
     position: relative;
-    margin: 1em auto 0.5em;
-    clear: both; }
-  section.drink-menu .sc_tabs_titles {
-    width: 70%;
+    margin: 1em auto; }
+  section.drink-menu h3 {
+    color: #fff;
+    position: relative;
     margin: 0 auto;
-    max-width: 300px;
+    font-size: 1.875px;
+    font-size: 3em;
+    line-height: 1.1em; }
+  section.drink-menu p {
+    color: #fff;
+    position: relative;
+    margin: 0.5em 0;
+    font-size: 0.8125px;
+    font-size: 1.3em;
+    line-height: 1.1em;
+    font-family: "tinos", serif; }
+  section.drink-menu .drink-nav {
+    width: 100%;
+    margin: 1em auto;
+    max-width: 400px;
     position: relative; }
+    section.drink-menu .drink-nav .tabs {
+      width: 47%;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 0.9375px;
+      font-size: 1.5em;
+      line-height: 1.1em;
+      font-family: "langdon", sans-serif;
+      display: inline-block;
+      margin: 1em 1.2%;
+      padding: 0.75em;
+      border: 3px solid white;
+      background-color: transparent;
+      -webkit-transition: all 0.3s 0.2s ease;
+      -moz-transition: all 0.3s 0.2s ease;
+      transition: all 0.3s 0.2s ease; }
+      section.drink-menu .drink-nav .tabs.active {
+        background-color: #25d7f7;
+        border: 3px solid #25d7f7; }
+  section.drink-menu .drink-menu-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 150em; }
+    @media screen and (min-width: 540px) {
+      section.drink-menu .drink-menu-wrap {
+        height: 95em; } }
+    @media screen and (min-width: 720px) {
+      section.drink-menu .drink-menu-wrap {
+        height: 65em; } }
+  section.drink-menu .page-one,
+  section.drink-menu .page-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden; }
+  section.drink-menu .menu-row {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto 1em;
+    max-width: 800px;
+    -webkit-transition: all 0.3s 0.2s ease;
+    -moz-transition: all 0.3s 0.2s ease;
+    transition: all 0.3s 0.2s ease; }
+  section.drink-menu #winter_menu {
+    -webkit-transform: translateX(-150%);
+    -moz-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    -o-transform: translateX(-150%);
+    transform: translateX(-150%);
+    opacity: 0; }
+    section.drink-menu #winter_menu.show {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1; }
+  section.drink-menu #winter_menu_2 {
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    transform: translateX(150%);
+    opacity: 0; }
+    section.drink-menu #winter_menu_2.show {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1; }
+  section.drink-menu #coffee_menu {
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    transform: translateX(150%);
+    opacity: 0; }
+    section.drink-menu #coffee_menu.show {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1; }
+  section.drink-menu #coffee_menu_2 {
+    -webkit-transform: translateX(-150%);
+    -moz-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    -o-transform: translateX(-150%);
+    transform: translateX(-150%);
+    opacity: 0; }
+    section.drink-menu #coffee_menu_2.show {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1; }
+  section.drink-menu .menu-item {
+    width: 100%;
+    margin: 0.5em auto;
+    display: block;
+    padding: 4.5em 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; }
+    section.drink-menu .menu-item.left-block, section.drink-menu .menu-item.right-block {
+      background-repeat: no-repeat; }
+      section.drink-menu .menu-item.left-block h3, section.drink-menu .menu-item.left-block p, section.drink-menu .menu-item.right-block h3, section.drink-menu .menu-item.right-block p {
+        text-shadow: 2px 1px 1px #444; }
+      section.drink-menu .menu-item.left-block p, section.drink-menu .menu-item.right-block p {
+        max-width: 200px; }
+      section.drink-menu .menu-item.left-block:after, section.drink-menu .menu-item.right-block:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        z-index: -1;
+        background-color: #444; }
+    section.drink-menu .menu-item.left-block {
+      background-image: url("../tn-imgs/cocktail-side.jpeg");
+      background-position: left center;
+      background-size: 150%; }
+      section.drink-menu .menu-item.left-block:nth-of-type(2) {
+        background-image: url("../tn-imgs/cocktail-angle.jpeg"); }
+    section.drink-menu .menu-item.right-block {
+      background-image: url("../tn-imgs/coffee-liqour.jpeg");
+      background-position: top center;
+      background-size: 150%; }
+      section.drink-menu .menu-item.right-block:nth-of-type(2) {
+        background-image: url("../tn-imgs/cocktail-angle.jpeg"); }
+    @media screen and (min-width: 540px) {
+      section.drink-menu .menu-item {
+        width: 49%;
+        margin: 0.5em 0;
+        display: inline-block; }
+        section.drink-menu .menu-item.left-block, section.drink-menu .menu-item.right-block {
+          margin: 0.5em auto;
+          width: 100%;
+          display: block;
+          background-size: 120%;
+          background-position: left 25%; } }
+    @media screen and (min-width: 720px) {
+      section.drink-menu .menu-item {
+        margin: 1.5em 0;
+        display: inline-block;
+        padding: 1.5em 1.5em 2em; }
+        section.drink-menu .menu-item.left {
+          float: left; }
+        section.drink-menu .menu-item.right {
+          float: right; }
+        section.drink-menu .menu-item.left-block, section.drink-menu .menu-item.right-block {
+          margin: 0.5em 0;
+          width: 49%;
+          display: block;
+          background-size: cover;
+          background-position: 25% center;
+          float: left;
+          padding: 1.5em 0 12em 1.5em; }
+        section.drink-menu .menu-item.right-block {
+          float: right; } }
 
 .contact-us {
   background-color: #444; }
