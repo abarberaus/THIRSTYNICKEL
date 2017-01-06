@@ -5,10 +5,10 @@
 
 //Your E-mail
 
-$your_email = 'your@email.net';
+$your_email = '54pines@gmail.com';
 
 //Default Subject if 'subject' field not specified
-$default_subject = 'From My Contact Form';
+$default_subject = 'From ThirstyNickelAustin.com Contact Form';
 
 //Message if 'name' field not specified
 $name_not_specified = 'Please type a valid name';
