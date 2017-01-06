@@ -1235,11 +1235,11 @@ section.drink-menu {
       section.drink-menu .menu-item.left-block:nth-of-type(2) {
         background-image: url("../tn-imgs/cocktail-angle.jpeg"); }
     section.drink-menu .menu-item.right-block {
-      background-image: url("../tn-imgs/coffee-liqour.jpeg");
+      background-image: url("../tn-imgs/latte.jpeg");
       background-position: top center;
       background-size: 150%; }
       section.drink-menu .menu-item.right-block:nth-of-type(2) {
-        background-image: url("../tn-imgs/cocktail-angle.jpeg"); }
+        background-image: url("../tn-imgs/tiramisu.jpeg"); }
     @media screen and (min-width: 540px) {
       section.drink-menu .menu-item {
         width: 49%;
