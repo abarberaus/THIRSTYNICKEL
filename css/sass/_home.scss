@@ -1073,6 +1073,30 @@
             overflow: hidden;
         }
 
+        .page-one .left-block {
+            background-image: url('../tn-imgs/WinterWarmer.jpeg');
+            background-position: left center;
+            background-size:150%;
+        }
+
+        .page-two .left-block {
+            background-image: url('../tn-imgs/CafeLatte.jpeg');
+            background-position:top center;
+            background-size:150%;
+        }
+
+        .page-one .right-block {
+            background-image: url('../tn-imgs/CoconutBrownie.jpeg');
+            background-position:top center;
+            background-size:150%;
+        }
+
+        .page-two .right-block {
+            background-image: url('../tn-imgs/ThirstyNickelSpecial.jpeg');
+            background-position:top center;
+            background-size:150%;
+
+        }
 
         .menu-row {
             position: relative;
@@ -1159,26 +1183,6 @@
                 }
             }
 
-
-            &.left-block {
-                background-image: url('../tn-imgs/cocktail-side.jpeg');
-                background-position: left center;
-                background-size:150%;
-
-                &:nth-of-type(2) {
-                    background-image: url('../tn-imgs/cocktail-angle.jpeg');
-                }
-            }
-
-            &.right-block {
-                background-image: url('../tn-imgs/coffee-liqour.jpeg');
-                background-position:top center;
-                background-size:150%;
-
-                &:nth-of-type(2) {
-                    background-image: url('../tn-imgs/cocktail-angle.jpeg');
-                }
-            }
 
 
             @media screen and (min-width:$screen-3) {
