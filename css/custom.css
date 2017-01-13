@@ -1198,13 +1198,13 @@ section.drink-menu {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 150em; }
+    height: 108em; }
     @media screen and (min-width: 540px) {
       section.drink-menu .drink-menu-wrap {
-        height: 95em; } }
+        height: 71em; } }
     @media screen and (min-width: 720px) {
       section.drink-menu .drink-menu-wrap {
-        height: 65em; } }
+        height: 52em; } }
   section.drink-menu .page-one,
   section.drink-menu .page-two {
     position: absolute;
