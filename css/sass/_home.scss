@@ -361,13 +361,7 @@
     width: 100%;
     position: relative;
     @include padding($md-sp-unit $md-sp-unit);
-    h1 {
-        // max-width: 450px;
-        font-size: 2.8em;
-        line-height: 1.1em;
-        @include margin(0 auto);
-        text-align: center !important;
-    }
+
     img {
         width: 100%;
         position: relative;
@@ -386,7 +380,54 @@
     }
     .flag-img {
         @include margin($md-sp-unit auto);
+        display: inline-block;
+        vertical-align: middle;
+
+        @media screen and (min-width: $screen-3) {
+            display: inline-block;
+            @include margin($md-sp-unit 2.3%);
+            width: 45%;
+        }
+    }
+    .blurb {
+        position: relative;
+        overflow: hidden;
+        width:100%;
+        @include margin($md-sp-unit auto);
+        max-width: 700px;
+        p {
+            @include font(1.3);
+            line-height: 1.4em;
+            @include margin(0 auto $sm-sp-unit);
+            width: 100%;
+            max-width: 600px;
+            color: white;
+        }
+    }
+    .move-right {
+        width: 100%;
+        position: relative;
         display: block;
+        @include margin($md-sp-unit auto);
+        max-width: 450px;
+        @include padding($md-sp-unit 0);
+        vertical-align: middle;
+
+        h1 {
+            // max-width: 450px;
+            font-size: 2.8em;
+            line-height: 1.1em;
+            @include margin(0 auto $sm-sp-unit);
+            text-align: center !important;
+            @media screen and (min-width: $screen-3) {
+                font-size: 3.3em;
+        }
+        }
+        @media screen and (min-width: $screen-3) {
+            display: inline-block;
+            @include margin($md-sp-unit 2.3%);
+            width: 45%;
+        }
     }
     .left {
         display: none;
@@ -804,9 +845,48 @@
 .sc_events {
     @include padding($sm-sp-unit 0);
     background-color:$maincolor;
+
     h1 {
         @include margin($lg-sp-unit auto 0);
     }
+    .blurb {
+        position: relative;
+        overflow: hidden;
+        width:100%;
+        @include margin($md-sp-unit auto);
+        max-width: 700px;
+        p {
+            @include font(1.3);
+            line-height: 1.4em;
+            @include margin(0 auto $sm-sp-unit);
+            width: 100%;
+            max-width: 600px;
+            color: white;
+            display: block;
+
+        }
+    }
+    .sc_button {
+        @include margin($md-sp-unit auto);
+        @include padding($md-sp-unit);
+        width: 100%;
+        max-width: 420px;
+        @include font(1.5);
+        border:3px solid $thirdcolor;
+        background-color:$thirdcolor;
+        color:$secondcolor;
+        @include transition(all 0.3s 0.1s ease);
+        text-decoration: none;
+        display: block;
+        position: relative;
+        &:hover {
+            color:$thirdcolor;
+            background:transparent;
+        }
+    }
+
+
+
     .sc_events_item_title a {
         letter-spacing: 2px;
     }
@@ -989,7 +1069,7 @@
             width:100%;
             position: relative;
             overflow:hidden;
-            @include padding(1em 0 2em);
+            @include padding(0.5em 0 2em);
             // @media screen and (min-width:680px) {
             //     padding:2em 3em 2em;
             // }
@@ -999,7 +1079,7 @@
             color:$secondcolor;
             text-align:center;
             position: relative;
-            @include margin(1em auto);
+            @include margin(0 auto);
         }
 
         h3 {

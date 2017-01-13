@@ -216,12 +216,12 @@ footer {
     display: inline-block;
     overflow: hidden;
     vertical-align: top;
-    text-align: left; }
+    text-align: center; }
     footer .footer-box h2 {
       color: #fff; }
     footer .footer-box span {
       color: white;
-      text-align: left;
+      text-align: center;
       font-size: 18px;
       font-family: "Langdon", sans-serif;
       text-transform: uppercase;
@@ -527,11 +527,6 @@ footer {
   width: 100%;
   position: relative;
   padding: 1.5em; }
-  .chi-town h1 {
-    font-size: 2.8em;
-    line-height: 1.1em;
-    margin: 0 auto;
-    text-align: center !important; }
   .chi-town img {
     width: 100%;
     position: relative;
@@ -549,7 +544,49 @@ footer {
         width: 28.1%; } }
   .chi-town .flag-img {
     margin: 1.5em auto;
-    display: block; }
+    display: inline-block;
+    vertical-align: middle; }
+    @media screen and (min-width: 540px) {
+      .chi-town .flag-img {
+        display: inline-block;
+        margin: 1.5em 2.3%;
+        width: 45%; } }
+  .chi-town .blurb {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 1.5em auto;
+    max-width: 700px; }
+    .chi-town .blurb p {
+      font-size: 0.8125px;
+      font-size: 1.3em;
+      line-height: 1.1em;
+      line-height: 1.4em;
+      margin: 0 auto 0.5em;
+      width: 100%;
+      max-width: 600px;
+      color: white; }
+  .chi-town .move-right {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 1.5em auto;
+    max-width: 450px;
+    padding: 1.5em 0;
+    vertical-align: middle; }
+    .chi-town .move-right h1 {
+      font-size: 2.8em;
+      line-height: 1.1em;
+      margin: 0 auto 0.5em;
+      text-align: center !important; }
+      @media screen and (min-width: 540px) {
+        .chi-town .move-right h1 {
+          font-size: 3.3em; } }
+    @media screen and (min-width: 540px) {
+      .chi-town .move-right {
+        display: inline-block;
+        margin: 1.5em 2.3%;
+        width: 45%; } }
   .chi-town .left {
     display: none; }
     @media screen and (min-width: 640px) {
@@ -915,6 +952,42 @@ footer {
   background-color: #444; }
   .sc_events h1 {
     margin: 3em auto 0; }
+  .sc_events .blurb {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 1.5em auto;
+    max-width: 700px; }
+    .sc_events .blurb p {
+      font-size: 0.8125px;
+      font-size: 1.3em;
+      line-height: 1.1em;
+      line-height: 1.4em;
+      margin: 0 auto 0.5em;
+      width: 100%;
+      max-width: 600px;
+      color: white;
+      display: block; }
+  .sc_events .sc_button {
+    margin: 1.5em auto;
+    padding: 1.5em;
+    width: 100%;
+    max-width: 420px;
+    font-size: 0.9375px;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    border: 3px solid #25d7f7;
+    background-color: #25d7f7;
+    color: #fff;
+    -webkit-transition: all 0.3s 0.1s ease;
+    -moz-transition: all 0.3s 0.1s ease;
+    transition: all 0.3s 0.1s ease;
+    text-decoration: none;
+    display: block;
+    position: relative; }
+    .sc_events .sc_button:hover {
+      color: #25d7f7;
+      background: transparent; }
   .sc_events .sc_events_item_title a {
     letter-spacing: 2px; }
   .sc_events .sc_events_item {
@@ -1073,12 +1146,12 @@ section.drink-menu {
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 1em 0 2em; }
+    padding: 0.5em 0 2em; }
   section.drink-menu h1 {
     color: #fff;
     text-align: center;
     position: relative;
-    margin: 1em auto; }
+    margin: 0 auto; }
   section.drink-menu h3 {
     color: #fff;
     position: relative;
