@@ -5,7 +5,7 @@
 
 //Your E-mail
 
-$your_email = 'events@thirstynickelaustin.com, 54pines@gmail.com';
+$your_email = 'events@thirstynickelaustin.com';
 
 //Default Subject if 'subject' field not specified
 $default_subject = 'From ThirstyNickelAustin.com Contact Form';
